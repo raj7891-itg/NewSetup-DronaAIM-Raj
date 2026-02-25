@@ -1,0 +1,8 @@
+app_identifier("com.dronaaim.dronaaim") # The bundle identifier of your app
+apple_id("connectedx@dronaaim.ai") # Your Apple Developer Portal username
+
+itc_team_id("127743767") # App Store Connect Team ID
+team_id("LU2G5N34K9") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

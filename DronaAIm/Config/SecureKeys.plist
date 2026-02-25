@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GMSApiKey</key>
+	<string>AIzaSyDaD1adlQujujm21hW7DwSwVLxFiEIQuJI</string>
+	<key>GMSApiKey_Development</key>
+	<string>AIzaSyDaD1adlQujujm21hW7DwSwVLxFiEIQuJI</string>
+	<key>GMSApiKey_QA</key>
+	<string>AIzaSyDaD1adlQujujm21hW7DwSwVLxFiEIQuJI</string>
+	<key>GMSApiKey_PreProd</key>
+	<string>AIzaSyDaD1adlQujujm21hW7DwSwVLxFiEIQuJI</string>
+</dict>
+</plist>
+

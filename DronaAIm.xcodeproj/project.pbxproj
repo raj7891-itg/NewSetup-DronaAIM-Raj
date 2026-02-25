@@ -1,0 +1,2275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180091622C81CE9100A6A311 /* UIBarbuttonItem_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180091612C81CE9100A6A311 /* UIBarbuttonItem_Extention.swift */; };
+		1800D5322CD08B7600B33735 /* LSPaddingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800D5312CD08B7500B33735 /* LSPaddingTextfield.swift */; };
+		180125BA2C65EC5300ADF2B2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 180125B92C65EC5300ADF2B2 /* SDWebImage */; };
+		180125BD2C663BEE00ADF2B2 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 180125BC2C663BEE00ADF2B2 /* GoogleMaps */; };
+		18036DDE2C6C8E3200F7F436 /* UIAlertController_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18036DDD2C6C8E3200F7F436 /* UIAlertController_Extention.swift */; };
+		1809FDB22C75B33E00E05395 /* LSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809FDB12C75B33E00E05395 /* LSConstants.swift */; };
+		180EE4582C65D9DE0037E30A /* LSTopAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EE4572C65D9DE0037E30A /* LSTopAlignedLabel.swift */; };
+		18117A0C2C7C9CE100DF16B5 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 18117A0B2C7C9CE100DF16B5 /* Toast */; };
+		181D81822C2D311D001F1326 /* DriverAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D81812C2D311D001F1326 /* DriverAssets.xcassets */; };
+		182FCA802C774A0200763148 /* LSNetworkManager_Cognito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FCA7F2C774A0200763148 /* LSNetworkManager_Cognito.swift */; };
+		182FCA822C774A4000763148 /* LANetworkManager_Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FCA812C774A4000763148 /* LANetworkManager_Google.swift */; };
+		182FCA842C774CE800763148 /* LSNetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FCA832C774CE800763148 /* LSNetworkEnvironment.swift */; };
+		18356D202C2BE9F000E93157 /* Driver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18356D1F2C2BE9F000E93157 /* Driver.storyboard */; };
+		184F59BF2C93F988002A313F /* LSDistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F59BE2C93F988002A313F /* LSDistanceCalculator.swift */; };
+		1865D0542C40F555003795F0 /* LSDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865D0532C40F555003795F0 /* LSDateFormatter.swift */; };
+		1878DFF62C24161B00E61C11 /* UIColor_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DFF52C24161B00E61C11 /* UIColor_Extention.swift */; };
+		187E98E42C786207004657AF /* LSCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E98E32C786207004657AF /* LSCalculation.swift */; };
+		187E98E62C787271004657AF /* LSActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E98E52C787271004657AF /* LSActivity.swift */; };
+		188183D62CB6459D001049C7 /* LANetworkManager_AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188183D52CB6459D001049C7 /* LANetworkManager_AWS.swift */; };
+		189263E12C930E9200CC759A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B2F53D2C0077CF00428C2E /* Assets.xcassets */; };
+		18A5A3A92C0EE7D1004B023E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18A5A3A82C0EE7D1004B023E /* IQKeyboardManagerSwift */; };
+		18A5A3AF2C0EEE1A004B023E /* Userdefaults_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5A3AE2C0EEE1A004B023E /* Userdefaults_Extention.swift */; };
+		18AC67D92C1C12F70027F8A1 /* UIView_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC67D82C1C12F70027F8A1 /* UIView_Extention.swift */; };
+		18B2F5352C0077CC00428C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2F5342C0077CC00428C2E /* AppDelegate.swift */; };
+		18B2F5372C0077CD00428C2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2F5362C0077CC00428C2E /* SceneDelegate.swift */; };
+		18B2F53C2C0077CD00428C2E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 18B2F53B2C0077CD00428C2E /* Base */; };
+		18B2F5412C0077CF00428C2E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 18B2F5402C0077CF00428C2E /* Base */; };
+		18B58F2B2C2FFAB500490F2D /* LSDocumentFileProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B58F2A2C2FFAB500490F2D /* LSDocumentFileProcessor.swift */; };
+		18BAAA522C200BF600CC0BF0 /* LSLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAAA512C200BF500CC0BF0 /* LSLocationService.swift */; };
+		18BAAA542C200C2200CC0BF0 /* LSAddressFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAAA532C200C2200CC0BF0 /* LSAddressFetcher.swift */; };
+		18BAAA572C20147200CC0BF0 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 18BAAA562C20147200CC0BF0 /* MBProgressHUD */; };
+		18BAAA592C20153400CC0BF0 /* LSProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAAA582C20153400CC0BF0 /* LSProgress.swift */; };
+		18DCFAE22C16C9EA00C6F52D /* LSColorLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCFAE12C16C9EA00C6F52D /* LSColorLabelView.swift */; };
+		18DCFAE72C16CC8200C6F52D /* LSStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCFAE62C16CC8200C6F52D /* LSStoryboard.swift */; };
+		18E6F59F2C4E30FA0082FE7D /* SwiftSignatureView in Frameworks */ = {isa = PBXBuildFile; productRef = 18E6F59E2C4E30FA0082FE7D /* SwiftSignatureView */; };
+		18F1D3742C5216390097530B /* LSMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1D3732C5216390097530B /* LSMapHelper.swift */; };
+		18F1D3762C5268A00097530B /* LSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1D3752C5268A00097530B /* LSNetworkManager.swift */; };
+		18F3AAC32C50BA4800F77168 /* LSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3AAC22C50BA4800F77168 /* LSLocationManager.swift */; };
+		6E5C9DAA2D002813000B86B2 /* LSPushNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C9DA92D002813000B86B2 /* LSPushNotificationModel.swift */; };
+		6E5C9DAC2D002BE9000B86B2 /* LSPushNotificationProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5C9DAB2D002BE9000B86B2 /* LSPushNotificationProcess.swift */; };
+		6E657FB92EF1122C007A4722 /* LSDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E657F102EF1122C007A4722 /* LSDatePicker.xib */; };
+		6E657FBA2EF1122C007A4722 /* LSTimeFrameButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E657F142EF1122C007A4722 /* LSTimeFrameButtonsView.xib */; };
+		6E657FBB2EF1122C007A4722 /* LSDEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F492EF1122C007A4722 /* LSDEventDetailsViewController.swift */; };
+		6E657FBC2EF1122C007A4722 /* LSDEventsFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F512EF1122C007A4722 /* LSDEventsFilterViewController.swift */; };
+		6E657FBD2EF1122C007A4722 /* LSDProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F982EF1122C007A4722 /* LSDProfileEditViewController.swift */; };
+		6E657FBE2EF1122C007A4722 /* LSDTripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657EFE2EF1122C007A4722 /* LSDTripsListViewController.swift */; };
+		6E657FBF2EF1122C007A4722 /* LSModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F162EF1122C007A4722 /* LSModels.swift */; };
+		6E657FC02EF1122C007A4722 /* LSLineChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F2C2EF1122C007A4722 /* LSLineChartTableViewCell.swift */; };
+		6E657FC12EF1122C007A4722 /* LSVerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F5D2EF1122C007A4722 /* LSVerificationCodeViewController.swift */; };
+		6E657FC22EF1122C007A4722 /* LSMetricsEventFrequencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F6A2EF1122C007A4722 /* LSMetricsEventFrequencyCell.swift */; };
+		6E657FC32EF1122C007A4722 /* LSNotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F842EF1122C007A4722 /* LSNotificationDetailView.swift */; };
+		6E657FC42EF1122C007A4722 /* LSDPhotosListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F402EF1122C007A4722 /* LSDPhotosListTableViewCell.swift */; };
+		6E657FC52EF1122C007A4722 /* LSBackspaceTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F772EF1122C007A4722 /* LSBackspaceTextField.swift */; };
+		6E657FC62EF1122C007A4722 /* LSLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F122EF1122C007A4722 /* LSLoadingCell.swift */; };
+		6E657FC72EF1122C007A4722 /* LSHalfCirclularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F192EF1122C007A4722 /* LSHalfCirclularProgress.swift */; };
+		6E657FC82EF1122C007A4722 /* LSDashboardFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F252EF1122C007A4722 /* LSDashboardFilterViewController.swift */; };
+		6E657FC92EF1122C007A4722 /* LSOrganizationsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F942EF1122C007A4722 /* LSOrganizationsListTableViewCell.swift */; };
+		6E657FCA2EF1122C007A4722 /* LSDProfileImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F992EF1122C007A4722 /* LSDProfileImagePickerViewController.swift */; };
+		6E657FCB2EF1122C007A4722 /* LSDriverScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F282EF1122C007A4722 /* LSDriverScoreModel.swift */; };
+		6E657FCC2EF1122C007A4722 /* LSTripEventTrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FB22EF1122C007A4722 /* LSTripEventTrackCell.swift */; };
+		6E657FCD2EF1122C007A4722 /* LSTripEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FAD2EF1122C007A4722 /* LSTripEventModel.swift */; };
+		6E657FCE2EF1122C007A4722 /* LSDropdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F0A2EF1122C007A4722 /* LSDropdownViewController.swift */; };
+		6E657FCF2EF1122C007A4722 /* LSOrganizationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F922EF1122C007A4722 /* LSOrganizationsListViewController.swift */; };
+		6E657FD02EF1122C007A4722 /* LSMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F712EF1122C007A4722 /* LSMoreViewController.swift */; };
+		6E657FD12EF1122C007A4722 /* LSDEventDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F4B2EF1122C007A4722 /* LSDEventDetailsTableViewCell.swift */; };
+		6E657FD22EF1122C007A4722 /* LSEventVideosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F4E2EF1122C007A4722 /* LSEventVideosTableViewCell.swift */; };
+		6E657FD32EF1122C007A4722 /* LSDPhotoIdCardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F3D2EF1122C007A4722 /* LSDPhotoIdCardsTableViewCell.swift */; };
+		6E657FD42EF1122C007A4722 /* LSBodyFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F782EF1122C007A4722 /* LSBodyFieldCell.swift */; };
+		6E657FD52EF1122C007A4722 /* LSVideosPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F0D2EF1122C007A4722 /* LSVideosPopoverViewController.swift */; };
+		6E657FD62EF1122C007A4722 /* LSMetricsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F622EF1122C007A4722 /* LSMetricsContainerViewController.swift */; };
+		6E657FD72EF1122C007A4722 /* LSNotificationDetailsIdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F832EF1122C007A4722 /* LSNotificationDetailsIdsView.swift */; };
+		6E657FD82EF1122C007A4722 /* LSMetricsEventMultilineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F6B2EF1122C007A4722 /* LSMetricsEventMultilineCell.swift */; };
+		6E657FD92EF1122C007A4722 /* LSUserDocumentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F3A2EF1122C007A4722 /* LSUserDocumentsModel.swift */; };
+		6E657FDA2EF1122C007A4722 /* LSDEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F542EF1122C007A4722 /* LSDEventModel.swift */; };
+		6E657FDB2EF1122C007A4722 /* LSTripDetailsLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FB12EF1122C007A4722 /* LSTripDetailsLocationCell.swift */; };
+		6E657FDC2EF1122C007A4722 /* LSDPhotoIdCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F3F2EF1122C007A4722 /* LSDPhotoIdCardViewModel.swift */; };
+		6E657FDD2EF1122C007A4722 /* LSSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F752EF1122C007A4722 /* LSSupportViewController.swift */; };
+		6E657FDE2EF1122C007A4722 /* LSDTripsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F052EF1122C007A4722 /* LSDTripsListCell.swift */; };
+		6E657FDF2EF1122C007A4722 /* LSMetricsEventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F662EF1122C007A4722 /* LSMetricsEventsModel.swift */; };
+		6E657FE02EF1122C007A4722 /* LSDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F182EF1122C007A4722 /* LSDatePicker.swift */; };
+		6E657FE12EF1122C007A4722 /* LSMetricsTripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F642EF1122C007A4722 /* LSMetricsTripDetailsViewController.swift */; };
+		6E657FE22EF1122C007A4722 /* LSTripsFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657EFF2EF1122C007A4722 /* LSTripsFilterViewController.swift */; };
+		6E657FE32EF1122C007A4722 /* LSMailComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F742EF1122C007A4722 /* LSMailComposerViewController.swift */; };
+		6E657FE42EF1122C007A4722 /* LSEventVideosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F4D2EF1122C007A4722 /* LSEventVideosCollectionViewCell.swift */; };
+		6E657FE52EF1122C007A4722 /* LSDocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F332EF1122C007A4722 /* LSDocumentsViewController.swift */; };
+		6E657FE62EF1122C007A4722 /* LSDProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F9E2EF1122C007A4722 /* LSDProfileTableViewCell.swift */; };
+		6E657FE72EF1122C007A4722 /* LSDEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F552EF1122C007A4722 /* LSDEventViewModel.swift */; };
+		6E657FE82EF1122C007A4722 /* LSMetricsEventPieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F6C2EF1122C007A4722 /* LSMetricsEventPieCell.swift */; };
+		6E657FE92EF1122C007A4722 /* LSDTripListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F022EF1122C007A4722 /* LSDTripListViewModel.swift */; };
+		6E657FEA2EF1122C007A4722 /* LSTrainingCertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F462EF1122C007A4722 /* LSTrainingCertViewController.swift */; };
+		6E657FEB2EF1122C007A4722 /* LSDNotificationsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F8B2EF1122C007A4722 /* LSDNotificationsTableView.swift */; };
+		6E657FEC2EF1122C007A4722 /* LSNotificationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F7E2EF1122C007A4722 /* LSNotificationDetailsViewController.swift */; };
+		6E657FED2EF1122C007A4722 /* LSDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F092EF1122C007A4722 /* LSDatePickerViewController.swift */; };
+		6E657FEE2EF1122C007A4722 /* LSDProfileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F9C2EF1122C007A4722 /* LSDProfileHandler.swift */; };
+		6E657FEF2EF1122C007A4722 /* LSDNotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F902EF1122C007A4722 /* LSDNotificationsViewModel.swift */; };
+		6E657FF02EF1122C007A4722 /* LSSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F312EF1122C007A4722 /* LSSignatureViewController.swift */; };
+		6E657FF12EF1122C007A4722 /* LSDEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F522EF1122C007A4722 /* LSDEventsViewController.swift */; };
+		6E657FF22EF1122C007A4722 /* LSVehicleAssignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F2D2EF1122C007A4722 /* LSVehicleAssignTableViewCell.swift */; };
+		6E657FF32EF1122C007A4722 /* LSDEventSafetyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F4C2EF1122C007A4722 /* LSDEventSafetyTableViewCell.swift */; };
+		6E657FF42EF1122C007A4722 /* LSTrainingCertificateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F452EF1122C007A4722 /* LSTrainingCertificateViewModel.swift */; };
+		6E657FF52EF1122C007A4722 /* LSTripIncidentInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FA92EF1122C007A4722 /* LSTripIncidentInfoCell.swift */; };
+		6E657FF62EF1122C007A4722 /* LSTimeFrameButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F132EF1122C007A4722 /* LSTimeFrameButtonsView.swift */; };
+		6E657FF72EF1122C007A4722 /* LSDNotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F8F2EF1122C007A4722 /* LSDNotificationsModel.swift */; };
+		6E657FF82EF1122C007A4722 /* LSDDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F262EF1122C007A4722 /* LSDDashboardViewController.swift */; };
+		6E657FF92EF1122C007A4722 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F5A2EF1122C007A4722 /* LoginViewController.swift */; };
+		6E657FFA2EF1122C007A4722 /* LSVehicleStatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FA32EF1122C007A4722 /* LSVehicleStatsModel.swift */; };
+		6E657FFB2EF1122C007A4722 /* LSCollectionViewTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FA52EF1122C007A4722 /* LSCollectionViewTitleHeader.swift */; };
+		6E657FFC2EF1122C007A4722 /* LSDPhotoIdCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F3E2EF1122C007A4722 /* LSDPhotoIdCardsViewController.swift */; };
+		6E657FFD2EF1122C007A4722 /* LSDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F9A2EF1122C007A4722 /* LSDProfileViewController.swift */; };
+		6E657FFE2EF1122C007A4722 /* LSDTripLiveTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FA12EF1122C007A4722 /* LSDTripLiveTrackModel.swift */; };
+		6E657FFF2EF1122C007A4722 /* LSChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F5B2EF1122C007A4722 /* LSChangePasswordViewController.swift */; };
+		6E6580002EF1122C007A4722 /* LSNotificationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F812EF1122C007A4722 /* LSNotificationDetailViewModel.swift */; };
+		6E6580012EF1122C007A4722 /* LSVehicleUnassignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F2E2EF1122C007A4722 /* LSVehicleUnassignTableViewCell.swift */; };
+		6E6580022EF1122C007A4722 /* LSDNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F872EF1122C007A4722 /* LSDNotificationsViewController.swift */; };
+		6E6580032EF1122C007A4722 /* LSDocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F362EF1122C007A4722 /* LSDocumentsViewModel.swift */; };
+		6E6580042EF1122C007A4722 /* LSMultilineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F6E2EF1122C007A4722 /* LSMultilineChartView.swift */; };
+		6E6580052EF1122C007A4722 /* LSTrainingCertificateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F432EF1122C007A4722 /* LSTrainingCertificateModel.swift */; };
+		6E6580062EF1122C007A4722 /* LSTripIncidentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FA22EF1122C007A4722 /* LSTripIncidentDataModel.swift */; };
+		6E6580072EF1122C007A4722 /* LSDDashboarDriverScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F2B2EF1122C007A4722 /* LSDDashboarDriverScoreCell.swift */; };
+		6E6580082EF1122C007A4722 /* LSDEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F572EF1122C007A4722 /* LSDEventTableViewCell.swift */; };
+		6E6580092EF1122C007A4722 /* LSDPhotoIdCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F3C2EF1122C007A4722 /* LSDPhotoIdCardModel.swift */; };
+		6E65800A2EF1122C007A4722 /* DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F0F2EF1122C007A4722 /* DropdownMenu.swift */; };
+		6E65800B2EF1122C007A4722 /* LSIncidentVideoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FA82EF1122C007A4722 /* LSIncidentVideoCollectionCell.swift */; };
+		6E65800C2EF1122C007A4722 /* LSTrainingCertificateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F442EF1122C007A4722 /* LSTrainingCertificateTableViewCell.swift */; };
+		6E65800D2EF1122C007A4722 /* LSEventsDencityLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F682EF1122C007A4722 /* LSEventsDencityLineChartView.swift */; };
+		6E65800E2EF1122C007A4722 /* LSAllVehiclesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F202EF1122C007A4722 /* LSAllVehiclesModel.swift */; };
+		6E65800F2EF1122C007A4722 /* LSToCCFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F7A2EF1122C007A4722 /* LSToCCFieldCell.swift */; };
+		6E6580102EF1122C007A4722 /* LSMetricsPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F6D2EF1122C007A4722 /* LSMetricsPieChartView.swift */; };
+		6E6580112EF1122C007A4722 /* LSDPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F972EF1122C007A4722 /* LSDPreviewViewController.swift */; };
+		6E6580122EF1122C007A4722 /* LSTripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FB62EF1122C007A4722 /* LSTripDetailsViewController.swift */; };
+		6E6580132EF1122C007A4722 /* LSDBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F8E2EF1122C007A4722 /* LSDBottomBar.swift */; };
+		6E6580142EF1122C007A4722 /* LSEventsFrequencyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F692EF1122C007A4722 /* LSEventsFrequencyChartView.swift */; };
+		6E6580152EF1122C007A4722 /* LSVehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F1E2EF1122C007A4722 /* LSVehiclesViewController.swift */; };
+		6E6580162EF1122C007A4722 /* LSPhotoUploadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F412EF1122C007A4722 /* LSPhotoUploadTableViewCell.swift */; };
+		6E6580172EF1122C007A4722 /* LSTripDetailsEngineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FB02EF1122C007A4722 /* LSTripDetailsEngineCell.swift */; };
+		6E6580182EF1122C007A4722 /* LSMetricsEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F632EF1122C007A4722 /* LSMetricsEventsViewController.swift */; };
+		6E6580192EF1122C007A4722 /* LSIncedentReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FA62EF1122C007A4722 /* LSIncedentReportTableViewCell.swift */; };
+		6E65801A2EF1122C007A4722 /* LSForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F5C2EF1122C007A4722 /* LSForgotPasswordViewController.swift */; };
+		6E65801B2EF1122C007A4722 /* LSVehiclesContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F1D2EF1122C007A4722 /* LSVehiclesContainerViewController.swift */; };
+		6E65801C2EF1122C007A4722 /* LSAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F082EF1122C007A4722 /* LSAVPlayerViewController.swift */; };
+		6E65801D2EF1122C007A4722 /* LSImagepreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F0B2EF1122C007A4722 /* LSImagepreviewViewController.swift */; };
+		6E65801E2EF1122C007A4722 /* LSDashboardDriverScoreLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F2A2EF1122C007A4722 /* LSDashboardDriverScoreLineChartView.swift */; };
+		6E65801F2EF1122C007A4722 /* LSUserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F5F2EF1122C007A4722 /* LSUserDetailsModel.swift */; };
+		6E6580202EF1122C007A4722 /* LSMapCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FAF2EF1122C007A4722 /* LSMapCardTableViewCell.swift */; };
+		6E6580212EF1122C007A4722 /* LSDTripListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F012EF1122C007A4722 /* LSDTripListModel.swift */; };
+		6E6580222EF1122C007A4722 /* LSDocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F352EF1122C007A4722 /* LSDocumentModel.swift */; };
+		6E6580232EF1122C007A4722 /* LSNotificationDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F802EF1122C007A4722 /* LSNotificationDetailModel.swift */; };
+		6E6580242EF1122C007A4722 /* LSDnotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F8C2EF1122C007A4722 /* LSDnotificationsTableViewCell.swift */; };
+		6E6580252EF1122C007A4722 /* LSSubjectFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F792EF1122C007A4722 /* LSSubjectFieldCell.swift */; };
+		6E6580262EF1122C007A4722 /* LSPHPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F1A2EF1122C007A4722 /* LSPHPickerController.swift */; };
+		6E6580272EF1122C007A4722 /* LSCombineCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F172EF1122C007A4722 /* LSCombineCommunicator.swift */; };
+		6E6580282EF1122C007A4722 /* LSTripDetailsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FB52EF1122C007A4722 /* LSTripDetailsContainerViewController.swift */; };
+		6E6580292EF1122C007A4722 /* LSVehiclesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F222EF1122C007A4722 /* LSVehiclesTableViewCell.swift */; };
+		6E65802A2EF1122C007A4722 /* LSDateTimeZoneRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F112EF1122C007A4722 /* LSDateTimeZoneRepresentable.swift */; };
+		6E65802B2EF1122C007A4722 /* LSIncidentReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FAB2EF1122C007A4722 /* LSIncidentReportViewController.swift */; };
+		6E65802C2EF1122C007A4722 /* LSNearbyVehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F1C2EF1122C007A4722 /* LSNearbyVehiclesViewController.swift */; };
+		6E65802D2EF1122C007A4722 /* LSHiddenNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F882EF1122C007A4722 /* LSHiddenNotificationsViewController.swift */; };
+		6E65802E2EF1122C007A4722 /* LSPDFPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F0C2EF1122C007A4722 /* LSPDFPreviewController.swift */; };
+		6E65802F2EF1122C007A4722 /* LSTripVehicleDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FB32EF1122C007A4722 /* LSTripVehicleDetailsTableViewCell.swift */; };
+		6E6580302EF1122C007A4722 /* LSEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657F732EF1122C007A4722 /* LSEmailViewController.swift */; };
+		6E6580312EF1122C007A4722 /* LSIncidentHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E657FA72EF1122C007A4722 /* LSIncidentHeaderTableViewCell.swift */; };
+		6E6587F82EF1222D007A4722 /* LSnotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6587F72EF12226007A4722 /* LSnotifications.swift */; };
+		6E65C01D2CF061D9004FBEE9 /* String_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E65C01C2CF061CC004FBEE9 /* String_Extention.swift */; };
+		6E7CF5282EEAA9B0001F717B /* LSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF5232EEAA9B0001F717B /* LSNavigationController.swift */; };
+		6E7CF52A2EEAA9B0001F717B /* LSTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF5252EEAA9B0001F717B /* LSTabbarController.swift */; };
+		6E7CF52B2EEAA9B0001F717B /* LSDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CF5212EEAA9B0001F717B /* LSDecisionViewController.swift */; };
+		6E8D771E2E4C95C500AA09D5 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 6E8D771D2E4C95C500AA09D5 /* AWSCognitoAuthPlugin */; };
+		6E8D77202E4C95C500AA09D5 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 6E8D771F2E4C95C500AA09D5 /* Amplify */; };
+		6EA4CE5E2EF10791004A24A9 /* UNUserNotificationCenter_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4CE5F2EF10791004A24AA /* UNUserNotificationCenter_Extention.swift */; };
+		6EA4CE602EF10791004A24AB /* UIViewController_Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4CE612EF10791004A24AC /* UIViewController_Navigation.swift */; };
+		6EA4CE622EF10792004A24AD /* LSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4CE632EF10792004A24AE /* LSLogger.swift */; };
+		6EA4CE652EF10793004A24B0 /* UIViewController_AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4CE642EF10793004A24AF /* UIViewController_AsyncTask.swift */; };
+		6EA4CE672EF10794004A24B2 /* Error_UserFriendly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4CE662EF10794004A24B1 /* Error_UserFriendly.swift */; };
+		6EA4CE6A2EF10795004A24B5 /* UITableView_SafeDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4CE682EF10795004A24B3 /* UITableView_SafeDequeue.swift */; };
+		6EA4CE6B2EF10796004A24B6 /* Optional_SafeUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4CE692EF10796004A24B4 /* Optional_SafeUnwrap.swift */; };
+		6EA4D5662EF10FDE004A24A7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6EA4D5652EF10FDE004A24A7 /* FirebaseCrashlytics */; };
+		6EF44F232E2F9FDA0091E9E4 /* EasyTipView in Frameworks */ = {isa = PBXBuildFile; productRef = 6EF44F222E2F9FDA0091E9E4 /* EasyTipView */; };
+		7B5730A82F08F0A6006B47FB /* GoogleService-Info-qa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B5730A22F08F0A6006B47FB /* GoogleService-Info-qa.plist */; };
+		7B5730A92F08F0A6006B47FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B57309F2F08F0A6006B47FB /* GoogleService-Info.plist */; };
+		7B5730AA2F08F0A6006B47FB /* GoogleService-Info-development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B5730A02F08F0A6006B47FB /* GoogleService-Info-development.plist */; };
+		7B5730AB2F08F0A6006B47FB /* AppStore_com.dronaaim.dronaaim.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 7B5730A42F08F0A6006B47FB /* AppStore_com.dronaaim.dronaaim.mobileprovision */; };
+		7B5730AC2F08F0A6006B47FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7B5730A52F08F0A6006B47FB /* README.md */; };
+		7B5730AD2F08F0A6006B47FB /* SecureKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B5730A62F08F0A6006B47FB /* SecureKeys.plist */; };
+		7B5730AE2F08F0A6006B47FB /* amplifyconfiguration-development.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B57309B2F08F0A6006B47FB /* amplifyconfiguration-development.json */; };
+		7B5730AF2F08F0A6006B47FB /* GoogleService-Info-preprod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B5730A12F08F0A6006B47FB /* GoogleService-Info-preprod.plist */; };
+		7B5730B02F08F0A6006B47FB /* amplifyconfiguration-preprod.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B57309C2F08F0A6006B47FB /* amplifyconfiguration-preprod.json */; };
+		7B5730B12F08F0A6006B47FB /* amplifyconfiguration-qa.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B57309D2F08F0A6006B47FB /* amplifyconfiguration-qa.json */; };
+		7B5730B22F08F0A6006B47FB /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B57309A2F08F0A6006B47FB /* amplifyconfiguration.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18575C942C1189B5004364F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E907902C5777B40092D198 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		180091612C81CE9100A6A311 /* UIBarbuttonItem_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarbuttonItem_Extention.swift; sourceTree = "<group>"; };
+		1800D5312CD08B7500B33735 /* LSPaddingTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPaddingTextfield.swift; sourceTree = "<group>"; };
+		18036DDD2C6C8E3200F7F436 /* UIAlertController_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController_Extention.swift; sourceTree = "<group>"; };
+		1809FDB12C75B33E00E05395 /* LSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSConstants.swift; sourceTree = "<group>"; };
+		180EE4572C65D9DE0037E30A /* LSTopAlignedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTopAlignedLabel.swift; sourceTree = "<group>"; };
+		181D81812C2D311D001F1326 /* DriverAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DriverAssets.xcassets; sourceTree = "<group>"; };
+		182FCA7F2C774A0200763148 /* LSNetworkManager_Cognito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNetworkManager_Cognito.swift; sourceTree = "<group>"; };
+		182FCA812C774A4000763148 /* LANetworkManager_Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANetworkManager_Google.swift; sourceTree = "<group>"; };
+		182FCA832C774CE800763148 /* LSNetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNetworkEnvironment.swift; sourceTree = "<group>"; };
+		18356D1F2C2BE9F000E93157 /* Driver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Driver.storyboard; sourceTree = "<group>"; };
+		184F59BE2C93F988002A313F /* LSDistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDistanceCalculator.swift; sourceTree = "<group>"; };
+		1865D0532C40F555003795F0 /* LSDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDateFormatter.swift; sourceTree = "<group>"; };
+		1878DFF52C24161B00E61C11 /* UIColor_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extention.swift; sourceTree = "<group>"; };
+		187E98E32C786207004657AF /* LSCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSCalculation.swift; sourceTree = "<group>"; };
+		187E98E52C787271004657AF /* LSActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSActivity.swift; sourceTree = "<group>"; };
+		188183D52CB6459D001049C7 /* LANetworkManager_AWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANetworkManager_AWS.swift; sourceTree = "<group>"; };
+		18A5A3AE2C0EEE1A004B023E /* Userdefaults_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userdefaults_Extention.swift; sourceTree = "<group>"; };
+		18AC67D82C1C12F70027F8A1 /* UIView_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extention.swift; sourceTree = "<group>"; };
+		18B2F5312C0077CC00428C2E /* DronaAIm Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DronaAIm Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2F5342C0077CC00428C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18B2F5362C0077CC00428C2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18B2F53B2C0077CD00428C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B2F53D2C0077CF00428C2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B2F5402C0077CF00428C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B2F5422C0077CF00428C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B58F2A2C2FFAB500490F2D /* LSDocumentFileProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDocumentFileProcessor.swift; sourceTree = "<group>"; };
+		18BAAA512C200BF500CC0BF0 /* LSLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSLocationService.swift; sourceTree = "<group>"; };
+		18BAAA532C200C2200CC0BF0 /* LSAddressFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAddressFetcher.swift; sourceTree = "<group>"; };
+		18BAAA582C20153400CC0BF0 /* LSProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSProgress.swift; sourceTree = "<group>"; };
+		18DCFAE12C16C9EA00C6F52D /* LSColorLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSColorLabelView.swift; sourceTree = "<group>"; };
+		18DCFAE62C16CC8200C6F52D /* LSStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSStoryboard.swift; sourceTree = "<group>"; };
+		18E907792C5777B20092D198 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		18E9077B2C5777B20092D198 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		18F1D3732C5216390097530B /* LSMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMapHelper.swift; sourceTree = "<group>"; };
+		18F1D3752C5268A00097530B /* LSNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNetworkManager.swift; sourceTree = "<group>"; };
+		18F3AAC22C50BA4800F77168 /* LSLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSLocationManager.swift; sourceTree = "<group>"; };
+		18F8FC3B2CC4D4B80030E132 /* DronaAImBeta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DronaAImBeta.entitlements; sourceTree = "<group>"; };
+		6E5C9DA92D002813000B86B2 /* LSPushNotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPushNotificationModel.swift; sourceTree = "<group>"; };
+		6E5C9DAB2D002BE9000B86B2 /* LSPushNotificationProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPushNotificationProcess.swift; sourceTree = "<group>"; };
+		6E657EFE2EF1122C007A4722 /* LSDTripsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDTripsListViewController.swift; sourceTree = "<group>"; };
+		6E657EFF2EF1122C007A4722 /* LSTripsFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripsFilterViewController.swift; sourceTree = "<group>"; };
+		6E657F012EF1122C007A4722 /* LSDTripListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDTripListModel.swift; sourceTree = "<group>"; };
+		6E657F022EF1122C007A4722 /* LSDTripListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDTripListViewModel.swift; sourceTree = "<group>"; };
+		6E657F052EF1122C007A4722 /* LSDTripsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDTripsListCell.swift; sourceTree = "<group>"; };
+		6E657F082EF1122C007A4722 /* LSAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAVPlayerViewController.swift; sourceTree = "<group>"; };
+		6E657F092EF1122C007A4722 /* LSDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDatePickerViewController.swift; sourceTree = "<group>"; };
+		6E657F0A2EF1122C007A4722 /* LSDropdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDropdownViewController.swift; sourceTree = "<group>"; };
+		6E657F0B2EF1122C007A4722 /* LSImagepreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSImagepreviewViewController.swift; sourceTree = "<group>"; };
+		6E657F0C2EF1122C007A4722 /* LSPDFPreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPDFPreviewController.swift; sourceTree = "<group>"; };
+		6E657F0D2EF1122C007A4722 /* LSVideosPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVideosPopoverViewController.swift; sourceTree = "<group>"; };
+		6E657F0F2EF1122C007A4722 /* DropdownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenu.swift; sourceTree = "<group>"; };
+		6E657F102EF1122C007A4722 /* LSDatePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LSDatePicker.xib; sourceTree = "<group>"; };
+		6E657F112EF1122C007A4722 /* LSDateTimeZoneRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDateTimeZoneRepresentable.swift; sourceTree = "<group>"; };
+		6E657F122EF1122C007A4722 /* LSLoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSLoadingCell.swift; sourceTree = "<group>"; };
+		6E657F132EF1122C007A4722 /* LSTimeFrameButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTimeFrameButtonsView.swift; sourceTree = "<group>"; };
+		6E657F142EF1122C007A4722 /* LSTimeFrameButtonsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LSTimeFrameButtonsView.xib; sourceTree = "<group>"; };
+		6E657F162EF1122C007A4722 /* LSModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSModels.swift; sourceTree = "<group>"; };
+		6E657F172EF1122C007A4722 /* LSCombineCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSCombineCommunicator.swift; sourceTree = "<group>"; };
+		6E657F182EF1122C007A4722 /* LSDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDatePicker.swift; sourceTree = "<group>"; };
+		6E657F192EF1122C007A4722 /* LSHalfCirclularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSHalfCirclularProgress.swift; sourceTree = "<group>"; };
+		6E657F1A2EF1122C007A4722 /* LSPHPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPHPickerController.swift; sourceTree = "<group>"; };
+		6E657F1C2EF1122C007A4722 /* LSNearbyVehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNearbyVehiclesViewController.swift; sourceTree = "<group>"; };
+		6E657F1D2EF1122C007A4722 /* LSVehiclesContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVehiclesContainerViewController.swift; sourceTree = "<group>"; };
+		6E657F1E2EF1122C007A4722 /* LSVehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVehiclesViewController.swift; sourceTree = "<group>"; };
+		6E657F202EF1122C007A4722 /* LSAllVehiclesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAllVehiclesModel.swift; sourceTree = "<group>"; };
+		6E657F222EF1122C007A4722 /* LSVehiclesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVehiclesTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F252EF1122C007A4722 /* LSDashboardFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDashboardFilterViewController.swift; sourceTree = "<group>"; };
+		6E657F262EF1122C007A4722 /* LSDDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDDashboardViewController.swift; sourceTree = "<group>"; };
+		6E657F282EF1122C007A4722 /* LSDriverScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDriverScoreModel.swift; sourceTree = "<group>"; };
+		6E657F2A2EF1122C007A4722 /* LSDashboardDriverScoreLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDashboardDriverScoreLineChartView.swift; sourceTree = "<group>"; };
+		6E657F2B2EF1122C007A4722 /* LSDDashboarDriverScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDDashboarDriverScoreCell.swift; sourceTree = "<group>"; };
+		6E657F2C2EF1122C007A4722 /* LSLineChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSLineChartTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F2D2EF1122C007A4722 /* LSVehicleAssignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVehicleAssignTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F2E2EF1122C007A4722 /* LSVehicleUnassignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVehicleUnassignTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F312EF1122C007A4722 /* LSSignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSSignatureViewController.swift; sourceTree = "<group>"; };
+		6E657F332EF1122C007A4722 /* LSDocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDocumentsViewController.swift; sourceTree = "<group>"; };
+		6E657F352EF1122C007A4722 /* LSDocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDocumentModel.swift; sourceTree = "<group>"; };
+		6E657F362EF1122C007A4722 /* LSDocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDocumentsViewModel.swift; sourceTree = "<group>"; };
+		6E657F3A2EF1122C007A4722 /* LSUserDocumentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSUserDocumentsModel.swift; sourceTree = "<group>"; };
+		6E657F3C2EF1122C007A4722 /* LSDPhotoIdCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDPhotoIdCardModel.swift; sourceTree = "<group>"; };
+		6E657F3D2EF1122C007A4722 /* LSDPhotoIdCardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDPhotoIdCardsTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F3E2EF1122C007A4722 /* LSDPhotoIdCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDPhotoIdCardsViewController.swift; sourceTree = "<group>"; };
+		6E657F3F2EF1122C007A4722 /* LSDPhotoIdCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDPhotoIdCardViewModel.swift; sourceTree = "<group>"; };
+		6E657F402EF1122C007A4722 /* LSDPhotosListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDPhotosListTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F412EF1122C007A4722 /* LSPhotoUploadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPhotoUploadTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F432EF1122C007A4722 /* LSTrainingCertificateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTrainingCertificateModel.swift; sourceTree = "<group>"; };
+		6E657F442EF1122C007A4722 /* LSTrainingCertificateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTrainingCertificateTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F452EF1122C007A4722 /* LSTrainingCertificateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTrainingCertificateViewModel.swift; sourceTree = "<group>"; };
+		6E657F462EF1122C007A4722 /* LSTrainingCertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTrainingCertViewController.swift; sourceTree = "<group>"; };
+		6E657F492EF1122C007A4722 /* LSDEventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDEventDetailsViewController.swift; sourceTree = "<group>"; };
+		6E657F4B2EF1122C007A4722 /* LSDEventDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDEventDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F4C2EF1122C007A4722 /* LSDEventSafetyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDEventSafetyTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F4D2EF1122C007A4722 /* LSEventVideosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSEventVideosCollectionViewCell.swift; sourceTree = "<group>"; };
+		6E657F4E2EF1122C007A4722 /* LSEventVideosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSEventVideosTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F512EF1122C007A4722 /* LSDEventsFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDEventsFilterViewController.swift; sourceTree = "<group>"; };
+		6E657F522EF1122C007A4722 /* LSDEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDEventsViewController.swift; sourceTree = "<group>"; };
+		6E657F542EF1122C007A4722 /* LSDEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDEventModel.swift; sourceTree = "<group>"; };
+		6E657F552EF1122C007A4722 /* LSDEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDEventViewModel.swift; sourceTree = "<group>"; };
+		6E657F572EF1122C007A4722 /* LSDEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDEventTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F5A2EF1122C007A4722 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6E657F5B2EF1122C007A4722 /* LSChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSChangePasswordViewController.swift; sourceTree = "<group>"; };
+		6E657F5C2EF1122C007A4722 /* LSForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		6E657F5D2EF1122C007A4722 /* LSVerificationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVerificationCodeViewController.swift; sourceTree = "<group>"; };
+		6E657F5F2EF1122C007A4722 /* LSUserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSUserDetailsModel.swift; sourceTree = "<group>"; };
+		6E657F622EF1122C007A4722 /* LSMetricsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMetricsContainerViewController.swift; sourceTree = "<group>"; };
+		6E657F632EF1122C007A4722 /* LSMetricsEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMetricsEventsViewController.swift; sourceTree = "<group>"; };
+		6E657F642EF1122C007A4722 /* LSMetricsTripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMetricsTripDetailsViewController.swift; sourceTree = "<group>"; };
+		6E657F662EF1122C007A4722 /* LSMetricsEventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMetricsEventsModel.swift; sourceTree = "<group>"; };
+		6E657F682EF1122C007A4722 /* LSEventsDencityLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSEventsDencityLineChartView.swift; sourceTree = "<group>"; };
+		6E657F692EF1122C007A4722 /* LSEventsFrequencyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSEventsFrequencyChartView.swift; sourceTree = "<group>"; };
+		6E657F6A2EF1122C007A4722 /* LSMetricsEventFrequencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMetricsEventFrequencyCell.swift; sourceTree = "<group>"; };
+		6E657F6B2EF1122C007A4722 /* LSMetricsEventMultilineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMetricsEventMultilineCell.swift; sourceTree = "<group>"; };
+		6E657F6C2EF1122C007A4722 /* LSMetricsEventPieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMetricsEventPieCell.swift; sourceTree = "<group>"; };
+		6E657F6D2EF1122C007A4722 /* LSMetricsPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMetricsPieChartView.swift; sourceTree = "<group>"; };
+		6E657F6E2EF1122C007A4722 /* LSMultilineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMultilineChartView.swift; sourceTree = "<group>"; };
+		6E657F712EF1122C007A4722 /* LSMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMoreViewController.swift; sourceTree = "<group>"; };
+		6E657F732EF1122C007A4722 /* LSEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSEmailViewController.swift; sourceTree = "<group>"; };
+		6E657F742EF1122C007A4722 /* LSMailComposerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMailComposerViewController.swift; sourceTree = "<group>"; };
+		6E657F752EF1122C007A4722 /* LSSupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSSupportViewController.swift; sourceTree = "<group>"; };
+		6E657F772EF1122C007A4722 /* LSBackspaceTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBackspaceTextField.swift; sourceTree = "<group>"; };
+		6E657F782EF1122C007A4722 /* LSBodyFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBodyFieldCell.swift; sourceTree = "<group>"; };
+		6E657F792EF1122C007A4722 /* LSSubjectFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSSubjectFieldCell.swift; sourceTree = "<group>"; };
+		6E657F7A2EF1122C007A4722 /* LSToCCFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSToCCFieldCell.swift; sourceTree = "<group>"; };
+		6E657F7E2EF1122C007A4722 /* LSNotificationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNotificationDetailsViewController.swift; sourceTree = "<group>"; };
+		6E657F802EF1122C007A4722 /* LSNotificationDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNotificationDetailModel.swift; sourceTree = "<group>"; };
+		6E657F812EF1122C007A4722 /* LSNotificationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNotificationDetailViewModel.swift; sourceTree = "<group>"; };
+		6E657F832EF1122C007A4722 /* LSNotificationDetailsIdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNotificationDetailsIdsView.swift; sourceTree = "<group>"; };
+		6E657F842EF1122C007A4722 /* LSNotificationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNotificationDetailView.swift; sourceTree = "<group>"; };
+		6E657F872EF1122C007A4722 /* LSDNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDNotificationsViewController.swift; sourceTree = "<group>"; };
+		6E657F882EF1122C007A4722 /* LSHiddenNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSHiddenNotificationsViewController.swift; sourceTree = "<group>"; };
+		6E657F8B2EF1122C007A4722 /* LSDNotificationsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDNotificationsTableView.swift; sourceTree = "<group>"; };
+		6E657F8C2EF1122C007A4722 /* LSDnotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDnotificationsTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F8E2EF1122C007A4722 /* LSDBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDBottomBar.swift; sourceTree = "<group>"; };
+		6E657F8F2EF1122C007A4722 /* LSDNotificationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDNotificationsModel.swift; sourceTree = "<group>"; };
+		6E657F902EF1122C007A4722 /* LSDNotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDNotificationsViewModel.swift; sourceTree = "<group>"; };
+		6E657F922EF1122C007A4722 /* LSOrganizationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSOrganizationsListViewController.swift; sourceTree = "<group>"; };
+		6E657F942EF1122C007A4722 /* LSOrganizationsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSOrganizationsListTableViewCell.swift; sourceTree = "<group>"; };
+		6E657F972EF1122C007A4722 /* LSDPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDPreviewViewController.swift; sourceTree = "<group>"; };
+		6E657F982EF1122C007A4722 /* LSDProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDProfileEditViewController.swift; sourceTree = "<group>"; };
+		6E657F992EF1122C007A4722 /* LSDProfileImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDProfileImagePickerViewController.swift; sourceTree = "<group>"; };
+		6E657F9A2EF1122C007A4722 /* LSDProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDProfileViewController.swift; sourceTree = "<group>"; };
+		6E657F9C2EF1122C007A4722 /* LSDProfileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDProfileHandler.swift; sourceTree = "<group>"; };
+		6E657F9E2EF1122C007A4722 /* LSDProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDProfileTableViewCell.swift; sourceTree = "<group>"; };
+		6E657FA12EF1122C007A4722 /* LSDTripLiveTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDTripLiveTrackModel.swift; sourceTree = "<group>"; };
+		6E657FA22EF1122C007A4722 /* LSTripIncidentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripIncidentDataModel.swift; sourceTree = "<group>"; };
+		6E657FA32EF1122C007A4722 /* LSVehicleStatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVehicleStatsModel.swift; sourceTree = "<group>"; };
+		6E657FA52EF1122C007A4722 /* LSCollectionViewTitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSCollectionViewTitleHeader.swift; sourceTree = "<group>"; };
+		6E657FA62EF1122C007A4722 /* LSIncedentReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSIncedentReportTableViewCell.swift; sourceTree = "<group>"; };
+		6E657FA72EF1122C007A4722 /* LSIncidentHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSIncidentHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		6E657FA82EF1122C007A4722 /* LSIncidentVideoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSIncidentVideoCollectionCell.swift; sourceTree = "<group>"; };
+		6E657FA92EF1122C007A4722 /* LSTripIncidentInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripIncidentInfoCell.swift; sourceTree = "<group>"; };
+		6E657FAB2EF1122C007A4722 /* LSIncidentReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSIncidentReportViewController.swift; sourceTree = "<group>"; };
+		6E657FAD2EF1122C007A4722 /* LSTripEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripEventModel.swift; sourceTree = "<group>"; };
+		6E657FAF2EF1122C007A4722 /* LSMapCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMapCardTableViewCell.swift; sourceTree = "<group>"; };
+		6E657FB02EF1122C007A4722 /* LSTripDetailsEngineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripDetailsEngineCell.swift; sourceTree = "<group>"; };
+		6E657FB12EF1122C007A4722 /* LSTripDetailsLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripDetailsLocationCell.swift; sourceTree = "<group>"; };
+		6E657FB22EF1122C007A4722 /* LSTripEventTrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripEventTrackCell.swift; sourceTree = "<group>"; };
+		6E657FB32EF1122C007A4722 /* LSTripVehicleDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripVehicleDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		6E657FB52EF1122C007A4722 /* LSTripDetailsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripDetailsContainerViewController.swift; sourceTree = "<group>"; };
+		6E657FB62EF1122C007A4722 /* LSTripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTripDetailsViewController.swift; sourceTree = "<group>"; };
+		6E6587F72EF12226007A4722 /* LSnotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSnotifications.swift; sourceTree = "<group>"; };
+		6E65C01C2CF061CC004FBEE9 /* String_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extention.swift; sourceTree = "<group>"; };
+		6E7CF5212EEAA9B0001F717B /* LSDecisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDecisionViewController.swift; sourceTree = "<group>"; };
+		6E7CF5232EEAA9B0001F717B /* LSNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNavigationController.swift; sourceTree = "<group>"; };
+		6E7CF5252EEAA9B0001F717B /* LSTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTabbarController.swift; sourceTree = "<group>"; };
+		6E90F0B82D0AF43A005C0E7A /* DronaAImRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DronaAImRelease.entitlements; sourceTree = "<group>"; };
+		6E9879582CEC6BC1006A279D /* DronaAIm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DronaAIm.entitlements; sourceTree = "<group>"; };
+		6EA4CE5F2EF10791004A24AA /* UNUserNotificationCenter_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNUserNotificationCenter_Extention.swift; sourceTree = "<group>"; };
+		6EA4CE612EF10791004A24AC /* UIViewController_Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Navigation.swift; sourceTree = "<group>"; };
+		6EA4CE632EF10792004A24AE /* LSLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSLogger.swift; sourceTree = "<group>"; };
+		6EA4CE642EF10793004A24AF /* UIViewController_AsyncTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_AsyncTask.swift; sourceTree = "<group>"; };
+		6EA4CE662EF10794004A24B1 /* Error_UserFriendly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error_UserFriendly.swift; sourceTree = "<group>"; };
+		6EA4CE682EF10795004A24B3 /* UITableView_SafeDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView_SafeDequeue.swift; sourceTree = "<group>"; };
+		6EA4CE692EF10796004A24B4 /* Optional_SafeUnwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional_SafeUnwrap.swift; sourceTree = "<group>"; };
+		7B57309A2F08F0A6006B47FB /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		7B57309B2F08F0A6006B47FB /* amplifyconfiguration-development.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "amplifyconfiguration-development.json"; sourceTree = "<group>"; };
+		7B57309C2F08F0A6006B47FB /* amplifyconfiguration-preprod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "amplifyconfiguration-preprod.json"; sourceTree = "<group>"; };
+		7B57309D2F08F0A6006B47FB /* amplifyconfiguration-qa.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "amplifyconfiguration-qa.json"; sourceTree = "<group>"; };
+		7B57309F2F08F0A6006B47FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B5730A02F08F0A6006B47FB /* GoogleService-Info-development.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-development.plist"; sourceTree = "<group>"; };
+		7B5730A12F08F0A6006B47FB /* GoogleService-Info-preprod.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-preprod.plist"; sourceTree = "<group>"; };
+		7B5730A22F08F0A6006B47FB /* GoogleService-Info-qa.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-qa.plist"; sourceTree = "<group>"; };
+		7B5730A42F08F0A6006B47FB /* AppStore_com.dronaaim.dronaaim.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppStore_com.dronaaim.dronaaim.mobileprovision; sourceTree = "<group>"; };
+		7B5730A52F08F0A6006B47FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7B5730A62F08F0A6006B47FB /* SecureKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SecureKeys.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6E78C7ED2E4DBF33003EBE59 /* QCropper */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = QCropper; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B2F52E2C0077CC00428C2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8D77202E4C95C500AA09D5 /* Amplify in Frameworks */,
+				18E6F59F2C4E30FA0082FE7D /* SwiftSignatureView in Frameworks */,
+				18117A0C2C7C9CE100DF16B5 /* Toast in Frameworks */,
+				180125BD2C663BEE00ADF2B2 /* GoogleMaps in Frameworks */,
+				6E8D771E2E4C95C500AA09D5 /* AWSCognitoAuthPlugin in Frameworks */,
+				18BAAA572C20147200CC0BF0 /* MBProgressHUD in Frameworks */,
+				18A5A3A92C0EE7D1004B023E /* IQKeyboardManagerSwift in Frameworks */,
+				6EA4D5662EF10FDE004A24A7 /* FirebaseCrashlytics in Frameworks */,
+				180125BA2C65EC5300ADF2B2 /* SDWebImage in Frameworks */,
+				6EF44F232E2F9FDA0091E9E4 /* EasyTipView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A5A3AD2C0EEDF1004B023E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				18A5A3AE2C0EEE1A004B023E /* Userdefaults_Extention.swift */,
+				18DCFAE12C16C9EA00C6F52D /* LSColorLabelView.swift */,
+				18DCFAE62C16CC8200C6F52D /* LSStoryboard.swift */,
+				18AC67D82C1C12F70027F8A1 /* UIView_Extention.swift */,
+				1878DFF52C24161B00E61C11 /* UIColor_Extention.swift */,
+				18036DDD2C6C8E3200F7F436 /* UIAlertController_Extention.swift */,
+				180091612C81CE9100A6A311 /* UIBarbuttonItem_Extention.swift */,
+				6E65C01C2CF061CC004FBEE9 /* String_Extention.swift */,
+				6EA4CE5F2EF10791004A24AA /* UNUserNotificationCenter_Extention.swift */,
+				6EA4CE612EF10791004A24AC /* UIViewController_Navigation.swift */,
+				6EA4CE642EF10793004A24AF /* UIViewController_AsyncTask.swift */,
+				6EA4CE662EF10794004A24B1 /* Error_UserFriendly.swift */,
+				6EA4CE682EF10795004A24B3 /* UITableView_SafeDequeue.swift */,
+				6EA4CE692EF10796004A24B4 /* Optional_SafeUnwrap.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		18B2948C2C0D9A5B00A78B76 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				182FCA832C774CE800763148 /* LSNetworkEnvironment.swift */,
+				18F1D3752C5268A00097530B /* LSNetworkManager.swift */,
+				182FCA7F2C774A0200763148 /* LSNetworkManager_Cognito.swift */,
+				182FCA812C774A4000763148 /* LANetworkManager_Google.swift */,
+				188183D52CB6459D001049C7 /* LANetworkManager_AWS.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		18B2F5282C0077CC00428C2E = {
+			isa = PBXGroup;
+			children = (
+				18B2F5332C0077CC00428C2E /* DronaAIm */,
+				18E907782C5777B20092D198 /* Frameworks */,
+				18B2F5322C0077CC00428C2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B2F5322C0077CC00428C2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B2F5312C0077CC00428C2E /* DronaAIm Dev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B2F5332C0077CC00428C2E /* DronaAIm */ = {
+			isa = PBXGroup;
+			children = (
+				7B5730A72F08F0A6006B47FB /* Config */,
+				6E90F0B82D0AF43A005C0E7A /* DronaAImRelease.entitlements */,
+				6E9879582CEC6BC1006A279D /* DronaAIm.entitlements */,
+				18F8FC3B2CC4D4B80030E132 /* DronaAImBeta.entitlements */,
+				18B2F5342C0077CC00428C2E /* AppDelegate.swift */,
+				18B2F5362C0077CC00428C2E /* SceneDelegate.swift */,
+				6E7CF5212EEAA9B0001F717B /* LSDecisionViewController.swift */,
+				6E7CF5252EEAA9B0001F717B /* LSTabbarController.swift */,
+				6E7CF5232EEAA9B0001F717B /* LSNavigationController.swift */,
+				6E657FB82EF1122C007A4722 /* Features */,
+				18B2948C2C0D9A5B00A78B76 /* APIService */,
+				18A5A3AD2C0EEDF1004B023E /* Extentions */,
+				18BAAA502C200BE500CC0BF0 /* Utility */,
+				18B2F53A2C0077CD00428C2E /* Main.storyboard */,
+				18356D1F2C2BE9F000E93157 /* Driver.storyboard */,
+				18B2F53D2C0077CF00428C2E /* Assets.xcassets */,
+				181D81812C2D311D001F1326 /* DriverAssets.xcassets */,
+				18B2F53F2C0077CF00428C2E /* LaunchScreen.storyboard */,
+				18B2F5422C0077CF00428C2E /* Info.plist */,
+			);
+			path = DronaAIm;
+			sourceTree = "<group>";
+		};
+		18BAAA502C200BE500CC0BF0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6E78C7ED2E4DBF33003EBE59 /* QCropper */,
+				18BAAA512C200BF500CC0BF0 /* LSLocationService.swift */,
+				184F59BE2C93F988002A313F /* LSDistanceCalculator.swift */,
+				187E98E52C787271004657AF /* LSActivity.swift */,
+				18F1D3732C5216390097530B /* LSMapHelper.swift */,
+				18F3AAC22C50BA4800F77168 /* LSLocationManager.swift */,
+				18BAAA532C200C2200CC0BF0 /* LSAddressFetcher.swift */,
+				18BAAA582C20153400CC0BF0 /* LSProgress.swift */,
+				18B58F2A2C2FFAB500490F2D /* LSDocumentFileProcessor.swift */,
+				1865D0532C40F555003795F0 /* LSDateFormatter.swift */,
+				180EE4572C65D9DE0037E30A /* LSTopAlignedLabel.swift */,
+				1809FDB12C75B33E00E05395 /* LSConstants.swift */,
+				6EA4CE632EF10792004A24AE /* LSLogger.swift */,
+				187E98E32C786207004657AF /* LSCalculation.swift */,
+				1800D5312CD08B7500B33735 /* LSPaddingTextfield.swift */,
+				6E5C9DA92D002813000B86B2 /* LSPushNotificationModel.swift */,
+				6E5C9DAB2D002BE9000B86B2 /* LSPushNotificationProcess.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		18E907782C5777B20092D198 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E907792C5777B20092D198 /* WidgetKit.framework */,
+				18E9077B2C5777B20092D198 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E657F002EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657EFE2EF1122C007A4722 /* LSDTripsListViewController.swift */,
+				6E657EFF2EF1122C007A4722 /* LSTripsFilterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F032EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F012EF1122C007A4722 /* LSDTripListModel.swift */,
+				6E657F022EF1122C007A4722 /* LSDTripListViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F062EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F052EF1122C007A4722 /* LSDTripsListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F072EF1122C007A4722 /* All Trips */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F002EF1122C007A4722 /* Controllers */,
+				6E657F032EF1122C007A4722 /* Models */,
+				6E657F062EF1122C007A4722 /* Views */,
+			);
+			path = "All Trips";
+			sourceTree = "<group>";
+		};
+		6E657F0E2EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F082EF1122C007A4722 /* LSAVPlayerViewController.swift */,
+				6E657F092EF1122C007A4722 /* LSDatePickerViewController.swift */,
+				6E657F0A2EF1122C007A4722 /* LSDropdownViewController.swift */,
+				6E657F0B2EF1122C007A4722 /* LSImagepreviewViewController.swift */,
+				6E657F0C2EF1122C007A4722 /* LSPDFPreviewController.swift */,
+				6E657F0D2EF1122C007A4722 /* LSVideosPopoverViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F152EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F0F2EF1122C007A4722 /* DropdownMenu.swift */,
+				6E657F102EF1122C007A4722 /* LSDatePicker.xib */,
+				6E657F112EF1122C007A4722 /* LSDateTimeZoneRepresentable.swift */,
+				6E657F122EF1122C007A4722 /* LSLoadingCell.swift */,
+				6E657F132EF1122C007A4722 /* LSTimeFrameButtonsView.swift */,
+				6E657F142EF1122C007A4722 /* LSTimeFrameButtonsView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F1B2EF1122C007A4722 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F0E2EF1122C007A4722 /* Controllers */,
+				6E657F152EF1122C007A4722 /* Views */,
+				6E657F162EF1122C007A4722 /* LSModels.swift */,
+				6E657F172EF1122C007A4722 /* LSCombineCommunicator.swift */,
+				6E657F182EF1122C007A4722 /* LSDatePicker.swift */,
+				6E657F192EF1122C007A4722 /* LSHalfCirclularProgress.swift */,
+				6E657F1A2EF1122C007A4722 /* LSPHPickerController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6E657F1F2EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F1C2EF1122C007A4722 /* LSNearbyVehiclesViewController.swift */,
+				6E657F1D2EF1122C007A4722 /* LSVehiclesContainerViewController.swift */,
+				6E657F1E2EF1122C007A4722 /* LSVehiclesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F212EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F202EF1122C007A4722 /* LSAllVehiclesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F232EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F222EF1122C007A4722 /* LSVehiclesTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F242EF1122C007A4722 /* All Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F1F2EF1122C007A4722 /* Controllers */,
+				6E657F212EF1122C007A4722 /* Models */,
+				6E657F232EF1122C007A4722 /* Views */,
+			);
+			path = "All Vehicles";
+			sourceTree = "<group>";
+		};
+		6E657F272EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F252EF1122C007A4722 /* LSDashboardFilterViewController.swift */,
+				6E657F262EF1122C007A4722 /* LSDDashboardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F292EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F282EF1122C007A4722 /* LSDriverScoreModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F2F2EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F2A2EF1122C007A4722 /* LSDashboardDriverScoreLineChartView.swift */,
+				6E657F2B2EF1122C007A4722 /* LSDDashboarDriverScoreCell.swift */,
+				6E657F2C2EF1122C007A4722 /* LSLineChartTableViewCell.swift */,
+				6E657F2D2EF1122C007A4722 /* LSVehicleAssignTableViewCell.swift */,
+				6E657F2E2EF1122C007A4722 /* LSVehicleUnassignTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F302EF1122C007A4722 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F242EF1122C007A4722 /* All Vehicles */,
+				6E657F272EF1122C007A4722 /* Controllers */,
+				6E657F292EF1122C007A4722 /* Models */,
+				6E657F2F2EF1122C007A4722 /* Views */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		6E657F322EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F312EF1122C007A4722 /* LSSignatureViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F342EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F332EF1122C007A4722 /* LSDocumentsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F372EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F352EF1122C007A4722 /* LSDocumentModel.swift */,
+				6E657F362EF1122C007A4722 /* LSDocumentsViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F382EF1122C007A4722 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6E657F392EF1122C007A4722 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F342EF1122C007A4722 /* Controllers */,
+				6E657F372EF1122C007A4722 /* Models */,
+				6E657F382EF1122C007A4722 /* ViewModels */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		6E657F3B2EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F3A2EF1122C007A4722 /* LSUserDocumentsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F422EF1122C007A4722 /* PhotoIdCards */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F3C2EF1122C007A4722 /* LSDPhotoIdCardModel.swift */,
+				6E657F3D2EF1122C007A4722 /* LSDPhotoIdCardsTableViewCell.swift */,
+				6E657F3E2EF1122C007A4722 /* LSDPhotoIdCardsViewController.swift */,
+				6E657F3F2EF1122C007A4722 /* LSDPhotoIdCardViewModel.swift */,
+				6E657F402EF1122C007A4722 /* LSDPhotosListTableViewCell.swift */,
+				6E657F412EF1122C007A4722 /* LSPhotoUploadTableViewCell.swift */,
+			);
+			path = PhotoIdCards;
+			sourceTree = "<group>";
+		};
+		6E657F472EF1122C007A4722 /* TrainingCertificates */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F432EF1122C007A4722 /* LSTrainingCertificateModel.swift */,
+				6E657F442EF1122C007A4722 /* LSTrainingCertificateTableViewCell.swift */,
+				6E657F452EF1122C007A4722 /* LSTrainingCertificateViewModel.swift */,
+				6E657F462EF1122C007A4722 /* LSTrainingCertViewController.swift */,
+			);
+			path = TrainingCertificates;
+			sourceTree = "<group>";
+		};
+		6E657F482EF1122C007A4722 /* Documents Center */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F322EF1122C007A4722 /* Controllers */,
+				6E657F392EF1122C007A4722 /* Documents */,
+				6E657F3B2EF1122C007A4722 /* Models */,
+				6E657F422EF1122C007A4722 /* PhotoIdCards */,
+				6E657F472EF1122C007A4722 /* TrainingCertificates */,
+			);
+			path = "Documents Center";
+			sourceTree = "<group>";
+		};
+		6E657F4A2EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F492EF1122C007A4722 /* LSDEventDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F4F2EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F4B2EF1122C007A4722 /* LSDEventDetailsTableViewCell.swift */,
+				6E657F4C2EF1122C007A4722 /* LSDEventSafetyTableViewCell.swift */,
+				6E657F4D2EF1122C007A4722 /* LSEventVideosCollectionViewCell.swift */,
+				6E657F4E2EF1122C007A4722 /* LSEventVideosTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F502EF1122C007A4722 /* Event  Details */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F4A2EF1122C007A4722 /* Controllers */,
+				6E657F4F2EF1122C007A4722 /* Views */,
+			);
+			path = "Event  Details";
+			sourceTree = "<group>";
+		};
+		6E657F532EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F512EF1122C007A4722 /* LSDEventsFilterViewController.swift */,
+				6E657F522EF1122C007A4722 /* LSDEventsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F562EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F542EF1122C007A4722 /* LSDEventModel.swift */,
+				6E657F552EF1122C007A4722 /* LSDEventViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F582EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F572EF1122C007A4722 /* LSDEventTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F592EF1122C007A4722 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F532EF1122C007A4722 /* Controllers */,
+				6E657F562EF1122C007A4722 /* Models */,
+				6E657F582EF1122C007A4722 /* Views */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		6E657F5E2EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F5A2EF1122C007A4722 /* LoginViewController.swift */,
+				6E657F5B2EF1122C007A4722 /* LSChangePasswordViewController.swift */,
+				6E657F5C2EF1122C007A4722 /* LSForgotPasswordViewController.swift */,
+				6E657F5D2EF1122C007A4722 /* LSVerificationCodeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F602EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F5F2EF1122C007A4722 /* LSUserDetailsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F612EF1122C007A4722 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F5E2EF1122C007A4722 /* Controllers */,
+				6E657F602EF1122C007A4722 /* Models */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6E657F652EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F622EF1122C007A4722 /* LSMetricsContainerViewController.swift */,
+				6E657F632EF1122C007A4722 /* LSMetricsEventsViewController.swift */,
+				6E657F642EF1122C007A4722 /* LSMetricsTripDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F672EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F662EF1122C007A4722 /* LSMetricsEventsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F6F2EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F682EF1122C007A4722 /* LSEventsDencityLineChartView.swift */,
+				6E657F692EF1122C007A4722 /* LSEventsFrequencyChartView.swift */,
+				6E657F6A2EF1122C007A4722 /* LSMetricsEventFrequencyCell.swift */,
+				6E657F6B2EF1122C007A4722 /* LSMetricsEventMultilineCell.swift */,
+				6E657F6C2EF1122C007A4722 /* LSMetricsEventPieCell.swift */,
+				6E657F6D2EF1122C007A4722 /* LSMetricsPieChartView.swift */,
+				6E657F6E2EF1122C007A4722 /* LSMultilineChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F702EF1122C007A4722 /* Metrics */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F652EF1122C007A4722 /* Controllers */,
+				6E657F672EF1122C007A4722 /* Models */,
+				6E657F6F2EF1122C007A4722 /* Views */,
+			);
+			path = Metrics;
+			sourceTree = "<group>";
+		};
+		6E657F722EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F712EF1122C007A4722 /* LSMoreViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F762EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F732EF1122C007A4722 /* LSEmailViewController.swift */,
+				6E657F742EF1122C007A4722 /* LSMailComposerViewController.swift */,
+				6E657F752EF1122C007A4722 /* LSSupportViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F7B2EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F772EF1122C007A4722 /* LSBackspaceTextField.swift */,
+				6E657F782EF1122C007A4722 /* LSBodyFieldCell.swift */,
+				6E657F792EF1122C007A4722 /* LSSubjectFieldCell.swift */,
+				6E657F7A2EF1122C007A4722 /* LSToCCFieldCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F7C2EF1122C007A4722 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F762EF1122C007A4722 /* Controllers */,
+				6E657F7B2EF1122C007A4722 /* Views */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		6E657F7D2EF1122C007A4722 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F722EF1122C007A4722 /* Controllers */,
+				6E657F7C2EF1122C007A4722 /* Support */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		6E657F7F2EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F7E2EF1122C007A4722 /* LSNotificationDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F822EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F802EF1122C007A4722 /* LSNotificationDetailModel.swift */,
+				6E657F812EF1122C007A4722 /* LSNotificationDetailViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F852EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F832EF1122C007A4722 /* LSNotificationDetailsIdsView.swift */,
+				6E657F842EF1122C007A4722 /* LSNotificationDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F862EF1122C007A4722 /* Notification Details */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F7F2EF1122C007A4722 /* Controllers */,
+				6E657F822EF1122C007A4722 /* Models */,
+				6E657F852EF1122C007A4722 /* Views */,
+			);
+			path = "Notification Details";
+			sourceTree = "<group>";
+		};
+		6E657F892EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F872EF1122C007A4722 /* LSDNotificationsViewController.swift */,
+				6E657F882EF1122C007A4722 /* LSHiddenNotificationsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F8A2EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E6587F72EF12226007A4722 /* LSnotifications.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F8D2EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F8B2EF1122C007A4722 /* LSDNotificationsTableView.swift */,
+				6E657F8C2EF1122C007A4722 /* LSDnotificationsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F912EF1122C007A4722 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F892EF1122C007A4722 /* Controllers */,
+				6E657F8A2EF1122C007A4722 /* Models */,
+				6E657F8D2EF1122C007A4722 /* Views */,
+				6E657F8E2EF1122C007A4722 /* LSDBottomBar.swift */,
+				6E657F8F2EF1122C007A4722 /* LSDNotificationsModel.swift */,
+				6E657F902EF1122C007A4722 /* LSDNotificationsViewModel.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		6E657F932EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F922EF1122C007A4722 /* LSOrganizationsListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F952EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F942EF1122C007A4722 /* LSOrganizationsListTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657F962EF1122C007A4722 /* Organizations */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F932EF1122C007A4722 /* Controllers */,
+				6E657F952EF1122C007A4722 /* Views */,
+			);
+			path = Organizations;
+			sourceTree = "<group>";
+		};
+		6E657F9B2EF1122C007A4722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F972EF1122C007A4722 /* LSDPreviewViewController.swift */,
+				6E657F982EF1122C007A4722 /* LSDProfileEditViewController.swift */,
+				6E657F992EF1122C007A4722 /* LSDProfileImagePickerViewController.swift */,
+				6E657F9A2EF1122C007A4722 /* LSDProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E657F9D2EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F9C2EF1122C007A4722 /* LSDProfileHandler.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657F9F2EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F9E2EF1122C007A4722 /* LSDProfileTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657FA02EF1122C007A4722 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F9B2EF1122C007A4722 /* Controllers */,
+				6E657F9D2EF1122C007A4722 /* Models */,
+				6E657F9F2EF1122C007A4722 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6E657FA42EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657FA12EF1122C007A4722 /* LSDTripLiveTrackModel.swift */,
+				6E657FA22EF1122C007A4722 /* LSTripIncidentDataModel.swift */,
+				6E657FA32EF1122C007A4722 /* LSVehicleStatsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657FAA2EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657FA52EF1122C007A4722 /* LSCollectionViewTitleHeader.swift */,
+				6E657FA62EF1122C007A4722 /* LSIncedentReportTableViewCell.swift */,
+				6E657FA72EF1122C007A4722 /* LSIncidentHeaderTableViewCell.swift */,
+				6E657FA82EF1122C007A4722 /* LSIncidentVideoCollectionCell.swift */,
+				6E657FA92EF1122C007A4722 /* LSTripIncidentInfoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657FAC2EF1122C007A4722 /* Incident Report */ = {
+			isa = PBXGroup;
+			children = (
+				6E657FA42EF1122C007A4722 /* Models */,
+				6E657FAA2EF1122C007A4722 /* Views */,
+				6E657FAB2EF1122C007A4722 /* LSIncidentReportViewController.swift */,
+			);
+			path = "Incident Report";
+			sourceTree = "<group>";
+		};
+		6E657FAE2EF1122C007A4722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E657FAD2EF1122C007A4722 /* LSTripEventModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E657FB42EF1122C007A4722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E657FAF2EF1122C007A4722 /* LSMapCardTableViewCell.swift */,
+				6E657FB02EF1122C007A4722 /* LSTripDetailsEngineCell.swift */,
+				6E657FB12EF1122C007A4722 /* LSTripDetailsLocationCell.swift */,
+				6E657FB22EF1122C007A4722 /* LSTripEventTrackCell.swift */,
+				6E657FB32EF1122C007A4722 /* LSTripVehicleDetailsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E657FB72EF1122C007A4722 /* Trip Details */ = {
+			isa = PBXGroup;
+			children = (
+				6E657FAC2EF1122C007A4722 /* Incident Report */,
+				6E657FAE2EF1122C007A4722 /* Models */,
+				6E657FB42EF1122C007A4722 /* Views */,
+				6E657FB52EF1122C007A4722 /* LSTripDetailsContainerViewController.swift */,
+				6E657FB62EF1122C007A4722 /* LSTripDetailsViewController.swift */,
+			);
+			path = "Trip Details";
+			sourceTree = "<group>";
+		};
+		6E657FB82EF1122C007A4722 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6E657F072EF1122C007A4722 /* All Trips */,
+				6E657F1B2EF1122C007A4722 /* Common */,
+				6E657F302EF1122C007A4722 /* Dashboard */,
+				6E657F482EF1122C007A4722 /* Documents Center */,
+				6E657F502EF1122C007A4722 /* Event  Details */,
+				6E657F592EF1122C007A4722 /* Events */,
+				6E657F612EF1122C007A4722 /* Login */,
+				6E657F702EF1122C007A4722 /* Metrics */,
+				6E657F7D2EF1122C007A4722 /* More */,
+				6E657F862EF1122C007A4722 /* Notification Details */,
+				6E657F912EF1122C007A4722 /* Notifications */,
+				6E657F962EF1122C007A4722 /* Organizations */,
+				6E657FA02EF1122C007A4722 /* Profile */,
+				6E657FB72EF1122C007A4722 /* Trip Details */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7B57309E2F08F0A6006B47FB /* Amplify */ = {
+			isa = PBXGroup;
+			children = (
+				7B57309A2F08F0A6006B47FB /* amplifyconfiguration.json */,
+				7B57309B2F08F0A6006B47FB /* amplifyconfiguration-development.json */,
+				7B57309C2F08F0A6006B47FB /* amplifyconfiguration-preprod.json */,
+				7B57309D2F08F0A6006B47FB /* amplifyconfiguration-qa.json */,
+			);
+			path = Amplify;
+			sourceTree = "<group>";
+		};
+		7B5730A32F08F0A6006B47FB /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				7B57309F2F08F0A6006B47FB /* GoogleService-Info.plist */,
+				7B5730A02F08F0A6006B47FB /* GoogleService-Info-development.plist */,
+				7B5730A12F08F0A6006B47FB /* GoogleService-Info-preprod.plist */,
+				7B5730A22F08F0A6006B47FB /* GoogleService-Info-qa.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		7B5730A72F08F0A6006B47FB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7B57309E2F08F0A6006B47FB /* Amplify */,
+				7B5730A32F08F0A6006B47FB /* Firebase */,
+				7B5730A42F08F0A6006B47FB /* AppStore_com.dronaaim.dronaaim.mobileprovision */,
+				7B5730A52F08F0A6006B47FB /* README.md */,
+				7B5730A62F08F0A6006B47FB /* SecureKeys.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B2F5302C0077CC00428C2E /* DronaAIm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2F5452C0077CF00428C2E /* Build configuration list for PBXNativeTarget "DronaAIm" */;
+			buildPhases = (
+				18B2F52D2C0077CC00428C2E /* Sources */,
+				18B2F52E2C0077CC00428C2E /* Frameworks */,
+				18B2F52F2C0077CC00428C2E /* Resources */,
+				18575C942C1189B5004364F9 /* Embed Frameworks */,
+				18E907902C5777B40092D198 /* Embed Foundation Extensions */,
+				6EA4CE5C2EF10791004A24A7 /* Amplify */,
+				6EA4CE5D2EF10791004A24A8 /* Firebase */,
+				6E16947A2D7FF29700F1ED5B /* Upload dSYM to Firebase */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6E78C7ED2E4DBF33003EBE59 /* QCropper */,
+			);
+			name = DronaAIm;
+			packageProductDependencies = (
+				18A5A3A82C0EE7D1004B023E /* IQKeyboardManagerSwift */,
+				18BAAA562C20147200CC0BF0 /* MBProgressHUD */,
+				18E6F59E2C4E30FA0082FE7D /* SwiftSignatureView */,
+				180125B92C65EC5300ADF2B2 /* SDWebImage */,
+				180125BC2C663BEE00ADF2B2 /* GoogleMaps */,
+				18117A0B2C7C9CE100DF16B5 /* Toast */,
+				6EF44F222E2F9FDA0091E9E4 /* EasyTipView */,
+				6E8D771D2E4C95C500AA09D5 /* AWSCognitoAuthPlugin */,
+				6E8D771F2E4C95C500AA09D5 /* Amplify */,
+				6EA4D5652EF10FDE004A24A7 /* FirebaseCrashlytics */,
+			);
+			productName = DronaAIm;
+			productReference = 18B2F5312C0077CC00428C2E /* DronaAIm Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B2F5292C0077CC00428C2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = LS;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					18B2F5302C0077CC00428C2E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 18B2F52C2C0077CC00428C2E /* Build configuration list for PBXProject "DronaAIm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B2F5282C0077CC00428C2E;
+			packageReferences = (
+				18A5A3A72C0EE7D1004B023E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				18BAAA552C20147200CC0BF0 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				18E6F59D2C4E30FA0082FE7D /* XCRemoteSwiftPackageReference "SwiftSignatureView" */,
+				180125B82C65EC5200ADF2B2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				180125BB2C663BED00ADF2B2 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				18117A0A2C7C9CE100DF16B5 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				6EF44F212E2F9FDA0091E9E4 /* XCRemoteSwiftPackageReference "EasyTipView" */,
+				6E8D771C2E4C95C500AA09D5 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				6EA4D5642EF10FDE004A24A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 18B2F5322C0077CC00428C2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B2F5302C0077CC00428C2E /* DronaAIm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B2F52F2C0077CC00428C2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181D81822C2D311D001F1326 /* DriverAssets.xcassets in Resources */,
+				189263E12C930E9200CC759A /* Assets.xcassets in Resources */,
+				18B2F5412C0077CF00428C2E /* Base in Resources */,
+				18356D202C2BE9F000E93157 /* Driver.storyboard in Resources */,
+				18B2F53C2C0077CD00428C2E /* Base in Resources */,
+				6E657FB92EF1122C007A4722 /* LSDatePicker.xib in Resources */,
+				7B5730A82F08F0A6006B47FB /* GoogleService-Info-qa.plist in Resources */,
+				7B5730A92F08F0A6006B47FB /* GoogleService-Info.plist in Resources */,
+				7B5730AA2F08F0A6006B47FB /* GoogleService-Info-development.plist in Resources */,
+				7B5730AB2F08F0A6006B47FB /* AppStore_com.dronaaim.dronaaim.mobileprovision in Resources */,
+				7B5730AC2F08F0A6006B47FB /* README.md in Resources */,
+				7B5730AD2F08F0A6006B47FB /* SecureKeys.plist in Resources */,
+				7B5730AE2F08F0A6006B47FB /* amplifyconfiguration-development.json in Resources */,
+				7B5730AF2F08F0A6006B47FB /* GoogleService-Info-preprod.plist in Resources */,
+				7B5730B02F08F0A6006B47FB /* amplifyconfiguration-preprod.json in Resources */,
+				7B5730B12F08F0A6006B47FB /* amplifyconfiguration-qa.json in Resources */,
+				7B5730B22F08F0A6006B47FB /* amplifyconfiguration.json in Resources */,
+				6E657FBA2EF1122C007A4722 /* LSTimeFrameButtonsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E16947A2D7FF29700F1ED5B /* Upload dSYM to Firebase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/GoogleService-Info.plist",
+			);
+			name = "Upload dSYM to Firebase";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Firebase Crashlytics dSYM Upload Script\n# This script uploads dSYM files to Firebase Crashlytics for symbolicated crash reports\n\necho \"🔍 Looking for Firebase Crashlytics upload script...\"\n\n# Try to find the run script in SourcePackages (SPM)\nSCRIPT_PATH=\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n\n# Alternative paths\nif [ ! -f \"$SCRIPT_PATH\" ]; then\n    SCRIPT_PATH=\"${DERIVED_DATA_DIR}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\nfi\n\n# Try to find it using find command\nif [ ! -f \"$SCRIPT_PATH\" ]; then\n    SCRIPT_PATH=$(find \"${BUILD_DIR%/Build/*}\" -name \"run\" -path \"*/firebase-ios-sdk/Crashlytics/run\" 2>/dev/null | head -1)\nfi\n\n# Try in DerivedData\nif [ ! -f \"$SCRIPT_PATH\" ] && [ -n \"$DERIVED_DATA_DIR\" ]; then\n    SCRIPT_PATH=$(find \"$DERIVED_DATA_DIR\" -name \"run\" -path \"*/firebase-ios-sdk/Crashlytics/run\" 2>/dev/null | head -1)\nfi\n\n# Find GoogleService-Info.plist in the app bundle\nGOOGLE_SERVICE_INFO_PLIST=\"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/GoogleService-Info.plist\"\n\nif [ ! -f \"$GOOGLE_SERVICE_INFO_PLIST\" ]; then\n    echo \"⚠️  Warning: GoogleService-Info.plist not found at $GOOGLE_SERVICE_INFO_PLIST\"\n    echo \"   Make sure the Firebase build script has run and copied the file.\"\nfi\n\nif [ -f \"$SCRIPT_PATH\" ]; then\n    echo \"✅ Found Firebase Crashlytics upload script at: $SCRIPT_PATH\"\n    if [ -f \"$GOOGLE_SERVICE_INFO_PLIST\" ]; then\n        echo \"✅ Found GoogleService-Info.plist at: $GOOGLE_SERVICE_INFO_PLIST\"\n    fi\n    echo \"📤 Uploading dSYM files to Firebase Crashlytics...\"\n    \n    # Set the GoogleService-Info.plist path for the upload script\n    export GOOGLE_SERVICE_INFO_PLIST_PATH=\"$GOOGLE_SERVICE_INFO_PLIST\"\n    \n    \"$SCRIPT_PATH\"\n    if [ $? -eq 0 ]; then\n        echo \"✅ dSYM files uploaded successfully\"\n    else\n        echo \"⚠️  Warning: dSYM upload may have failed\"\n    fi\nelse\n    echo \"⚠️  Warning: Firebase Crashlytics upload script not found.\"\n    echo \"   The script was searched in:\"\n    echo \"   - ${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n    echo \"   - ${DERIVED_DATA_DIR}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n    echo \"   Make sure:\"\n    echo \"   1. FirebaseCrashlytics is added via Swift Package Manager\"\n    echo \"   2. The project has been built at least once\"\n    echo \"   3. GoogleService-Info.plist is in the app bundle\"\nfi\n";
+		};
+		6EA4CE5C2EF10791004A24A7 /* Amplify */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Amplify;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "AMPLIFY_FILE_NAME=\"amplifyconfiguration.json\"\nDEST_AMPLIFY_FILE_NAME=\"amplifyconfiguration.json\"\n\necho \"Started $PLATFORM_NAME Copying: $AMPLIFY_FILE_NAME to dest: $DEST_AMPLIFY_FILE_NAME\"\n\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nAMPLIFY_FILE_NAME=\"amplifyconfiguration-development.json\"\nelif [ \"${CONFIGURATION}\" = \"Release\" ]; then\nAMPLIFY_FILE_NAME=\"amplifyconfiguration.json\"\nelif [ \"${CONFIGURATION}\" = \"Development\" ]; then\nAMPLIFY_FILE_NAME=\"amplifyconfiguration-development.json\"\nelif [ \"${CONFIGURATION}\" = \"Qa\" ]; then\nAMPLIFY_FILE_NAME=\"amplifyconfiguration-qa.json\"\nelif [ \"${CONFIGURATION}\" = \"PreProd\" ]; then\nAMPLIFY_FILE_NAME=\"amplifyconfiguration-preprod.json\"\nelse\nAMPLIFY_FILE_NAME=\"amplifyconfiguration.json\"\nfi\n\nSOURCE_FILE=\"${SRCROOT}/Config/Amplify/$AMPLIFY_FILE_NAME\"\nDEST_FILE=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/$DEST_AMPLIFY_FILE_NAME\"\n\nif [ -f \"$SOURCE_FILE\" ]; then\n    echo \"Copying $AMPLIFY_FILE_NAME to $DEST_AMPLIFY_FILE_NAME\"\n    cp -R \"$SOURCE_FILE\" \"$DEST_FILE\"\n    echo \"Copy Complete\"\nelse\n    echo \"⚠️  Warning: Amplify config file not found at $SOURCE_FILE\"\n    echo \"Skipping copy (Amplify configuration code is commented out)\"\n    # Create empty file to satisfy output dependency\n    touch \"$DEST_FILE\"\nfi\n";
+		};
+		6EA4CE5D2EF10791004A24A8 /* Firebase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Firebase;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FIREBASE_FILE_NAME=\"GoogleService-Info.plist\"\nDEST_FIREBASE_FILE_NAME=\"GoogleService-Info.plist\"\n\necho \"Started $PLATFORM_NAME Copying: $FIREBASE_FILE_NAME to dest: $DEST_FIREBASE_FILE_NAME\"\n\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nFIREBASE_FILE_NAME=\"GoogleService-Info-development.plist\"\nelif [ \"${CONFIGURATION}\" = \"Release\" ]; then\nFIREBASE_FILE_NAME=\"GoogleService-Info.plist\"\nelif [ \"${CONFIGURATION}\" = \"Development\" ]; then\nFIREBASE_FILE_NAME=\"GoogleService-Info-development.plist\"\nelif [ \"${CONFIGURATION}\" = \"Qa\" ]; then\nFIREBASE_FILE_NAME=\"GoogleService-Info-qa.plist\"\nelif [ \"${CONFIGURATION}\" = \"PreProd\" ]; then\nFIREBASE_FILE_NAME=\"GoogleService-Info-preprod.plist\"\nelse\nFIREBASE_FILE_NAME=\"GoogleService-Info.plist\"\nfi\n\nSOURCE_FILE=\"${SRCROOT}/Config/Firebase/$FIREBASE_FILE_NAME\"\nDEST_FILE=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/$DEST_FIREBASE_FILE_NAME\"\n\nif [ -f \"$SOURCE_FILE\" ]; then\n    echo \"Copying $FIREBASE_FILE_NAME to $DEST_FIREBASE_FILE_NAME\"\n    cp -R \"$SOURCE_FILE\" \"$DEST_FILE\"\n    echo \"Copy Complete\"\nelse\n    echo \"⚠️  Warning: Firebase config file not found at $SOURCE_FILE\"\n    echo \"Skipping copy (Firebase configuration code is commented out)\"\n    # Create empty file to satisfy output dependency\n    touch \"$DEST_FILE\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B2F52D2C0077CC00428C2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188183D62CB6459D001049C7 /* LANetworkManager_AWS.swift in Sources */,
+				182FCA822C774A4000763148 /* LANetworkManager_Google.swift in Sources */,
+				184F59BF2C93F988002A313F /* LSDistanceCalculator.swift in Sources */,
+				187E98E42C786207004657AF /* LSCalculation.swift in Sources */,
+				182FCA842C774CE800763148 /* LSNetworkEnvironment.swift in Sources */,
+				18036DDE2C6C8E3200F7F436 /* UIAlertController_Extention.swift in Sources */,
+				18AC67D92C1C12F70027F8A1 /* UIView_Extention.swift in Sources */,
+				1800D5322CD08B7600B33735 /* LSPaddingTextfield.swift in Sources */,
+				18B2F5352C0077CC00428C2E /* AppDelegate.swift in Sources */,
+				18BAAA592C20153400CC0BF0 /* LSProgress.swift in Sources */,
+				6E5C9DAC2D002BE9000B86B2 /* LSPushNotificationProcess.swift in Sources */,
+				6E5C9DAA2D002813000B86B2 /* LSPushNotificationModel.swift in Sources */,
+				1878DFF62C24161B00E61C11 /* UIColor_Extention.swift in Sources */,
+				18BAAA522C200BF600CC0BF0 /* LSLocationService.swift in Sources */,
+				18DCFAE72C16CC8200C6F52D /* LSStoryboard.swift in Sources */,
+				18A5A3AF2C0EEE1A004B023E /* Userdefaults_Extention.swift in Sources */,
+				6EA4CE5E2EF10791004A24A9 /* UNUserNotificationCenter_Extention.swift in Sources */,
+				6EA4CE602EF10791004A24AB /* UIViewController_Navigation.swift in Sources */,
+				6EA4CE652EF10793004A24B0 /* UIViewController_AsyncTask.swift in Sources */,
+				6EA4CE672EF10794004A24B2 /* Error_UserFriendly.swift in Sources */,
+				6EA4CE6A2EF10795004A24B5 /* UITableView_SafeDequeue.swift in Sources */,
+				6EA4CE6B2EF10796004A24B6 /* Optional_SafeUnwrap.swift in Sources */,
+				1809FDB22C75B33E00E05395 /* LSConstants.swift in Sources */,
+				6EA4CE622EF10792004A24AD /* LSLogger.swift in Sources */,
+				180091622C81CE9100A6A311 /* UIBarbuttonItem_Extention.swift in Sources */,
+				18DCFAE22C16C9EA00C6F52D /* LSColorLabelView.swift in Sources */,
+				6E7CF5282EEAA9B0001F717B /* LSNavigationController.swift in Sources */,
+				6E7CF52A2EEAA9B0001F717B /* LSTabbarController.swift in Sources */,
+				6E7CF52B2EEAA9B0001F717B /* LSDecisionViewController.swift in Sources */,
+				18F1D3742C5216390097530B /* LSMapHelper.swift in Sources */,
+				18BAAA542C200C2200CC0BF0 /* LSAddressFetcher.swift in Sources */,
+				6E657FBB2EF1122C007A4722 /* LSDEventDetailsViewController.swift in Sources */,
+				6E657FBC2EF1122C007A4722 /* LSDEventsFilterViewController.swift in Sources */,
+				6E657FBD2EF1122C007A4722 /* LSDProfileEditViewController.swift in Sources */,
+				6E657FBE2EF1122C007A4722 /* LSDTripsListViewController.swift in Sources */,
+				6E657FBF2EF1122C007A4722 /* LSModels.swift in Sources */,
+				6E657FC02EF1122C007A4722 /* LSLineChartTableViewCell.swift in Sources */,
+				6E657FC12EF1122C007A4722 /* LSVerificationCodeViewController.swift in Sources */,
+				6E657FC22EF1122C007A4722 /* LSMetricsEventFrequencyCell.swift in Sources */,
+				6E657FC32EF1122C007A4722 /* LSNotificationDetailView.swift in Sources */,
+				6E657FC42EF1122C007A4722 /* LSDPhotosListTableViewCell.swift in Sources */,
+				6E657FC52EF1122C007A4722 /* LSBackspaceTextField.swift in Sources */,
+				6E657FC62EF1122C007A4722 /* LSLoadingCell.swift in Sources */,
+				6E657FC72EF1122C007A4722 /* LSHalfCirclularProgress.swift in Sources */,
+				6E657FC82EF1122C007A4722 /* LSDashboardFilterViewController.swift in Sources */,
+				6E657FC92EF1122C007A4722 /* LSOrganizationsListTableViewCell.swift in Sources */,
+				6E657FCA2EF1122C007A4722 /* LSDProfileImagePickerViewController.swift in Sources */,
+				6E657FCB2EF1122C007A4722 /* LSDriverScoreModel.swift in Sources */,
+				6E657FCC2EF1122C007A4722 /* LSTripEventTrackCell.swift in Sources */,
+				6E657FCD2EF1122C007A4722 /* LSTripEventModel.swift in Sources */,
+				6E657FCE2EF1122C007A4722 /* LSDropdownViewController.swift in Sources */,
+				6E657FCF2EF1122C007A4722 /* LSOrganizationsListViewController.swift in Sources */,
+				6E657FD02EF1122C007A4722 /* LSMoreViewController.swift in Sources */,
+				6E657FD12EF1122C007A4722 /* LSDEventDetailsTableViewCell.swift in Sources */,
+				6E657FD22EF1122C007A4722 /* LSEventVideosTableViewCell.swift in Sources */,
+				6E657FD32EF1122C007A4722 /* LSDPhotoIdCardsTableViewCell.swift in Sources */,
+				6E657FD42EF1122C007A4722 /* LSBodyFieldCell.swift in Sources */,
+				6E657FD52EF1122C007A4722 /* LSVideosPopoverViewController.swift in Sources */,
+				6E657FD62EF1122C007A4722 /* LSMetricsContainerViewController.swift in Sources */,
+				6E657FD72EF1122C007A4722 /* LSNotificationDetailsIdsView.swift in Sources */,
+				6E657FD82EF1122C007A4722 /* LSMetricsEventMultilineCell.swift in Sources */,
+				6E657FD92EF1122C007A4722 /* LSUserDocumentsModel.swift in Sources */,
+				6E657FDA2EF1122C007A4722 /* LSDEventModel.swift in Sources */,
+				6E657FDB2EF1122C007A4722 /* LSTripDetailsLocationCell.swift in Sources */,
+				6E657FDC2EF1122C007A4722 /* LSDPhotoIdCardViewModel.swift in Sources */,
+				6E657FDD2EF1122C007A4722 /* LSSupportViewController.swift in Sources */,
+				6E657FDE2EF1122C007A4722 /* LSDTripsListCell.swift in Sources */,
+				6E657FDF2EF1122C007A4722 /* LSMetricsEventsModel.swift in Sources */,
+				6E657FE02EF1122C007A4722 /* LSDatePicker.swift in Sources */,
+				6E657FE12EF1122C007A4722 /* LSMetricsTripDetailsViewController.swift in Sources */,
+				6E657FE22EF1122C007A4722 /* LSTripsFilterViewController.swift in Sources */,
+				6E657FE32EF1122C007A4722 /* LSMailComposerViewController.swift in Sources */,
+				6E657FE42EF1122C007A4722 /* LSEventVideosCollectionViewCell.swift in Sources */,
+				6E657FE52EF1122C007A4722 /* LSDocumentsViewController.swift in Sources */,
+				6E657FE62EF1122C007A4722 /* LSDProfileTableViewCell.swift in Sources */,
+				6E657FE72EF1122C007A4722 /* LSDEventViewModel.swift in Sources */,
+				6E657FE82EF1122C007A4722 /* LSMetricsEventPieCell.swift in Sources */,
+				6E657FE92EF1122C007A4722 /* LSDTripListViewModel.swift in Sources */,
+				6E657FEA2EF1122C007A4722 /* LSTrainingCertViewController.swift in Sources */,
+				6E657FEB2EF1122C007A4722 /* LSDNotificationsTableView.swift in Sources */,
+				6E657FEC2EF1122C007A4722 /* LSNotificationDetailsViewController.swift in Sources */,
+				6E657FED2EF1122C007A4722 /* LSDatePickerViewController.swift in Sources */,
+				6E657FEE2EF1122C007A4722 /* LSDProfileHandler.swift in Sources */,
+				6E657FEF2EF1122C007A4722 /* LSDNotificationsViewModel.swift in Sources */,
+				6E657FF02EF1122C007A4722 /* LSSignatureViewController.swift in Sources */,
+				6E657FF12EF1122C007A4722 /* LSDEventsViewController.swift in Sources */,
+				6E657FF22EF1122C007A4722 /* LSVehicleAssignTableViewCell.swift in Sources */,
+				6E657FF32EF1122C007A4722 /* LSDEventSafetyTableViewCell.swift in Sources */,
+				6E657FF42EF1122C007A4722 /* LSTrainingCertificateViewModel.swift in Sources */,
+				6E657FF52EF1122C007A4722 /* LSTripIncidentInfoCell.swift in Sources */,
+				6E657FF62EF1122C007A4722 /* LSTimeFrameButtonsView.swift in Sources */,
+				6E657FF72EF1122C007A4722 /* LSDNotificationsModel.swift in Sources */,
+				6E657FF82EF1122C007A4722 /* LSDDashboardViewController.swift in Sources */,
+				6E657FF92EF1122C007A4722 /* LoginViewController.swift in Sources */,
+				6E657FFA2EF1122C007A4722 /* LSVehicleStatsModel.swift in Sources */,
+				6E657FFB2EF1122C007A4722 /* LSCollectionViewTitleHeader.swift in Sources */,
+				6E657FFC2EF1122C007A4722 /* LSDPhotoIdCardsViewController.swift in Sources */,
+				6E657FFD2EF1122C007A4722 /* LSDProfileViewController.swift in Sources */,
+				6E657FFE2EF1122C007A4722 /* LSDTripLiveTrackModel.swift in Sources */,
+				6E657FFF2EF1122C007A4722 /* LSChangePasswordViewController.swift in Sources */,
+				6E6580002EF1122C007A4722 /* LSNotificationDetailViewModel.swift in Sources */,
+				6E6580012EF1122C007A4722 /* LSVehicleUnassignTableViewCell.swift in Sources */,
+				6E6580022EF1122C007A4722 /* LSDNotificationsViewController.swift in Sources */,
+				6E6580032EF1122C007A4722 /* LSDocumentsViewModel.swift in Sources */,
+				6E6580042EF1122C007A4722 /* LSMultilineChartView.swift in Sources */,
+				6E6580052EF1122C007A4722 /* LSTrainingCertificateModel.swift in Sources */,
+				6E6580062EF1122C007A4722 /* LSTripIncidentDataModel.swift in Sources */,
+				6E6580072EF1122C007A4722 /* LSDDashboarDriverScoreCell.swift in Sources */,
+				6E6580082EF1122C007A4722 /* LSDEventTableViewCell.swift in Sources */,
+				6E6580092EF1122C007A4722 /* LSDPhotoIdCardModel.swift in Sources */,
+				6E65800A2EF1122C007A4722 /* DropdownMenu.swift in Sources */,
+				6E65800B2EF1122C007A4722 /* LSIncidentVideoCollectionCell.swift in Sources */,
+				6E65800C2EF1122C007A4722 /* LSTrainingCertificateTableViewCell.swift in Sources */,
+				6E65800D2EF1122C007A4722 /* LSEventsDencityLineChartView.swift in Sources */,
+				6E65800E2EF1122C007A4722 /* LSAllVehiclesModel.swift in Sources */,
+				6E65800F2EF1122C007A4722 /* LSToCCFieldCell.swift in Sources */,
+				6E6580102EF1122C007A4722 /* LSMetricsPieChartView.swift in Sources */,
+				6E6580112EF1122C007A4722 /* LSDPreviewViewController.swift in Sources */,
+				6E6580122EF1122C007A4722 /* LSTripDetailsViewController.swift in Sources */,
+				6E6580132EF1122C007A4722 /* LSDBottomBar.swift in Sources */,
+				6E6580142EF1122C007A4722 /* LSEventsFrequencyChartView.swift in Sources */,
+				6E6580152EF1122C007A4722 /* LSVehiclesViewController.swift in Sources */,
+				6E6580162EF1122C007A4722 /* LSPhotoUploadTableViewCell.swift in Sources */,
+				6E6580172EF1122C007A4722 /* LSTripDetailsEngineCell.swift in Sources */,
+				6E6580182EF1122C007A4722 /* LSMetricsEventsViewController.swift in Sources */,
+				6E6580192EF1122C007A4722 /* LSIncedentReportTableViewCell.swift in Sources */,
+				6E65801A2EF1122C007A4722 /* LSForgotPasswordViewController.swift in Sources */,
+				6E65801B2EF1122C007A4722 /* LSVehiclesContainerViewController.swift in Sources */,
+				6E65801C2EF1122C007A4722 /* LSAVPlayerViewController.swift in Sources */,
+				6E65801D2EF1122C007A4722 /* LSImagepreviewViewController.swift in Sources */,
+				6E65801E2EF1122C007A4722 /* LSDashboardDriverScoreLineChartView.swift in Sources */,
+				6E65801F2EF1122C007A4722 /* LSUserDetailsModel.swift in Sources */,
+				6E6580202EF1122C007A4722 /* LSMapCardTableViewCell.swift in Sources */,
+				6E6580212EF1122C007A4722 /* LSDTripListModel.swift in Sources */,
+				6E6580222EF1122C007A4722 /* LSDocumentModel.swift in Sources */,
+				6E6587F82EF1222D007A4722 /* LSnotifications.swift in Sources */,
+				6E6580232EF1122C007A4722 /* LSNotificationDetailModel.swift in Sources */,
+				6E6580242EF1122C007A4722 /* LSDnotificationsTableViewCell.swift in Sources */,
+				6E6580252EF1122C007A4722 /* LSSubjectFieldCell.swift in Sources */,
+				6E6580262EF1122C007A4722 /* LSPHPickerController.swift in Sources */,
+				6E6580272EF1122C007A4722 /* LSCombineCommunicator.swift in Sources */,
+				6E6580282EF1122C007A4722 /* LSTripDetailsContainerViewController.swift in Sources */,
+				6E6580292EF1122C007A4722 /* LSVehiclesTableViewCell.swift in Sources */,
+				6E65802A2EF1122C007A4722 /* LSDateTimeZoneRepresentable.swift in Sources */,
+				6E65802B2EF1122C007A4722 /* LSIncidentReportViewController.swift in Sources */,
+				6E65802C2EF1122C007A4722 /* LSNearbyVehiclesViewController.swift in Sources */,
+				6E65802D2EF1122C007A4722 /* LSHiddenNotificationsViewController.swift in Sources */,
+				6E65802E2EF1122C007A4722 /* LSPDFPreviewController.swift in Sources */,
+				6E65802F2EF1122C007A4722 /* LSTripVehicleDetailsTableViewCell.swift in Sources */,
+				6E6580302EF1122C007A4722 /* LSEmailViewController.swift in Sources */,
+				6E6580312EF1122C007A4722 /* LSIncidentHeaderTableViewCell.swift in Sources */,
+				18B58F2B2C2FFAB500490F2D /* LSDocumentFileProcessor.swift in Sources */,
+				18F1D3762C5268A00097530B /* LSNetworkManager.swift in Sources */,
+				182FCA802C774A0200763148 /* LSNetworkManager_Cognito.swift in Sources */,
+				180EE4582C65D9DE0037E30A /* LSTopAlignedLabel.swift in Sources */,
+				187E98E62C787271004657AF /* LSActivity.swift in Sources */,
+				1865D0542C40F555003795F0 /* LSDateFormatter.swift in Sources */,
+				18B2F5372C0077CD00428C2E /* SceneDelegate.swift in Sources */,
+				6E65C01D2CF061D9004FBEE9 /* String_Extention.swift in Sources */,
+				18F3AAC32C50BA4800F77168 /* LSLocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18B2F53A2C0077CD00428C2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B2F53B2C0077CD00428C2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B2F53F2C0077CF00428C2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B2F5402C0077CF00428C2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187D1FB32C4A2EC00055058B /* PreProd */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "PREPROD=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-DPREPROD";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PREPROD;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = PreProd;
+		};
+		187D1FB42C4A2EC00055058B /* PreProd */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PreProd";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DronaAIm/DronaAImBeta.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LU2G5N34K9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DronaAIm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DronaAIm;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DronaAIm wants to access the Camera of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DronaAIm wants to access the Photo Library of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronaaim.dronaaim;
+				PRODUCT_NAME = "$(TARGET_NAME) Beta";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.dronaaim.dronaaim AppStore";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = PreProd;
+		};
+		18B2F5432C0077CF00428C2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B2F5442C0077CF00428C2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B2F5462C0077CF00428C2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DronaAIm/DronaAIm.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LU2G5N34K9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DronaAIm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DronaAIm;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DronaAIm wants to access the Camera of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DronaAIm wants to access the Photo Library of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronaaim.dronaaim;
+				PRODUCT_NAME = "$(TARGET_NAME) Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.dronaaim.dronaaim AppStore";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B2F5472C0077CF00428C2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DronaAIm/DronaAImRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LU2G5N34K9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DronaAIm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DronaAIm;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DronaAIm wants to access the Camera of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DronaAIm wants to access the Photo Library of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronaaim.dronaaim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.dronaaim.dronaaim AppStore";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EF6A0022D5C91D600808EB9 /* Qa */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "QA=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-DQA";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = QA;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Qa;
+		};
+		6EF6A0032D5C91D600808EB9 /* Qa */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Qa";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DronaAIm/DronaAImRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LU2G5N34K9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DronaAIm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DronaAIm;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DronaAIm wants to access the Camera of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DronaAIm wants to access the Photo Library of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronaaim.dronaaim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.dronaaim.dronaaim AppStore";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Qa;
+		};
+		6EF6A0042D5C998900808EB9 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Development;
+		};
+		6EF6A0052D5C998900808EB9 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DronaAIm/DronaAIm.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LU2G5N34K9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DronaAIm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DronaAIm;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DronaAIm wants to access the Camera of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DronaAIm wants to access the Photo Library of the device to enable you to add your Photos!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronaaim.dronaaim;
+				PRODUCT_NAME = "$(TARGET_NAME) Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.dronaaim.dronaaim AppStore";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B2F52C2C0077CC00428C2E /* Build configuration list for PBXProject "DronaAIm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2F5432C0077CF00428C2E /* Debug */,
+				6EF6A0042D5C998900808EB9 /* Development */,
+				18B2F5442C0077CF00428C2E /* Release */,
+				6EF6A0022D5C91D600808EB9 /* Qa */,
+				187D1FB32C4A2EC00055058B /* PreProd */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2F5452C0077CF00428C2E /* Build configuration list for PBXNativeTarget "DronaAIm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2F5462C0077CF00428C2E /* Debug */,
+				6EF6A0052D5C998900808EB9 /* Development */,
+				18B2F5472C0077CF00428C2E /* Release */,
+				6EF6A0032D5C91D600808EB9 /* Qa */,
+				187D1FB42C4A2EC00055058B /* PreProd */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		180125B82C65EC5200ADF2B2 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.6;
+			};
+		};
+		180125BB2C663BED00ADF2B2 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		18117A0A2C7C9CE100DF16B5 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		18A5A3A72C0EE7D1004B023E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.3;
+			};
+		};
+		18BAAA552C20147200CC0BF0 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		18E6F59D2C4E30FA0082FE7D /* XCRemoteSwiftPackageReference "SwiftSignatureView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alankarmisra/SwiftSignatureView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+		6E8D771C2E4C95C500AA09D5 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.50.0;
+			};
+		};
+		6EA4D5642EF10FDE004A24A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+		6EF44F212E2F9FDA0091E9E4 /* XCRemoteSwiftPackageReference "EasyTipView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/teodorpatras/EasyTipView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		180125B92C65EC5300ADF2B2 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180125B82C65EC5200ADF2B2 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		180125BC2C663BEE00ADF2B2 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180125BB2C663BED00ADF2B2 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+		18117A0B2C7C9CE100DF16B5 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18117A0A2C7C9CE100DF16B5 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		18A5A3A82C0EE7D1004B023E /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18A5A3A72C0EE7D1004B023E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		18BAAA562C20147200CC0BF0 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BAAA552C20147200CC0BF0 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		18E6F59E2C4E30FA0082FE7D /* SwiftSignatureView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18E6F59D2C4E30FA0082FE7D /* XCRemoteSwiftPackageReference "SwiftSignatureView" */;
+			productName = SwiftSignatureView;
+		};
+		6E8D771D2E4C95C500AA09D5 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E8D771C2E4C95C500AA09D5 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		6E8D771F2E4C95C500AA09D5 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E8D771C2E4C95C500AA09D5 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		6EA4D5652EF10FDE004A24A7 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EA4D5642EF10FDE004A24A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6EF44F222E2F9FDA0091E9E4 /* EasyTipView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EF44F212E2F9FDA0091E9E4 /* XCRemoteSwiftPackageReference "EasyTipView" */;
+			productName = EasyTipView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 18B2F5292C0077CC00428C2E /* Project object */;
+}
