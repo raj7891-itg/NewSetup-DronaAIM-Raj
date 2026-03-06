@@ -47,8 +47,16 @@ class LSTripVehicleDetailsTableViewCell: UITableViewCell {
         self.deviceIdLabel.text = trip.deviceID
         self.eldProviderLabel.text = vehicleStats?.deviceProvider ?? "NA"
         
+        // Parse vehicleScore string to Double for comparisons and display
+        let vehicleScoreValue: Double? = {
+            if let scoreString = trip.vehicleScore {
+                return Double(scoreString)
+            }
+            return nil
+        }()
+
         var scoreColor = UIColor.appRed
-        if let tripScore = trip.vehicleScore {
+        if let tripScore = vehicleScoreValue {
             if tripScore >= 90 {
                 scoreColor = UIColor.appGreen
             } else if tripScore >= 80 && tripScore <= 89 {
@@ -59,9 +67,9 @@ class LSTripVehicleDetailsTableViewCell: UITableViewCell {
         vehicleScoreView.backgroundColor = scoreColor.withAlphaComponent(0.1)
         vehicleScoreView.layer.borderColor = scoreColor.cgColor
 
-        if let vehicleScore = trip.vehicleScore {
-            let vehicleScore = LSCalculation.shared.doubleFormat(score: vehicleScore)
-            self.vehicleScoreLabel.text = "Vehicle Score \(vehicleScore)"
+        if let vehicleScore = vehicleScoreValue {
+            let vehicleScoreText = LSCalculation.shared.doubleFormat(score: vehicleScore)
+            self.vehicleScoreLabel.text = "Vehicle Score \(vehicleScoreText)"
         } else {
             self.vehicleScoreLabel.text = "Vehicle Score NA"
             vehicleScoreLabel.textColor = UIColor.lightGray
@@ -72,3 +80,4 @@ class LSTripVehicleDetailsTableViewCell: UITableViewCell {
     }
 
 }
+

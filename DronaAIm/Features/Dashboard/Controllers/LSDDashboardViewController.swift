@@ -21,7 +21,7 @@ class LSDDashboardViewController: UIViewController {
 
     var scoreModel: LSDriverScoreModel?
     var cancellable: AnyCancellable?
-    var assignedVehicle: LSVehicle?
+    var assignedVehicle: LSVehicleModel?
     var timeRange: TimeRange = .week
     
     deinit {
@@ -145,9 +145,9 @@ class LSDDashboardViewController: UIViewController {
 
             LSProgress.show(in: self.view)
             let endpoint = LSAPIEndpoints.vehiclesByTenentId(for: lonestarId)
-            let response: LSAllVehiclesModel = try await LSNetworkManager.shared.post(endpoint, body: LSRequstEmpty(empty: ""), parameters: ["page": "1", "limit":  "100"])
+            let response: LSVehicleListResponse = try await LSNetworkManager.shared.post(endpoint, body: LSRequstEmpty(empty: ""), parameters: ["page": "1", "limit":  "100"])
             let vehicles = response.vehicles
-            let vehicle = vehicles?.first(where: {$0.driverID == userDetails.userId})
+            let vehicle = vehicles.first(where: {$0.driverId == userDetails.userId})
             self.assignedVehicle = vehicle
             self.tableView.reloadData()
             LSProgress.hide(from: self.view)
@@ -195,7 +195,7 @@ class LSDDashboardViewController: UIViewController {
         LSProgress.show(in: self.view)
 
         let endpoint = LSAPIEndpoints.driverToVehicleUnAssign()
-        if let vehicleId = assignedVehicle?.vehicleID {
+        if let vehicleId = assignedVehicle?.vehicleId {
             let requestbody = RequestBodyForVehicleAssign(driverId: userDetails.userId, vehicleId: vehicleId, lonestarId: lonestarId, currentLoggedInUserId: userDetails.userId)
             Task {
                 do {

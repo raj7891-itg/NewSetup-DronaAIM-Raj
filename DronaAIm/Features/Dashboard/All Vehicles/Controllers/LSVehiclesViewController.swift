@@ -18,7 +18,7 @@ struct RequestBodyForVehicleAssign: Encodable {
 class LSVehiclesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var vehicles: [LSVehicle]?
+    var vehicles: [LSVehicleModel]?
     @IBOutlet weak var assignButton: UIButton!
     var selectedIndexPath: IndexPath?
     
@@ -39,12 +39,12 @@ class LSVehiclesViewController: UIViewController {
         self.tableView.reloadData()
     }
     
-    private func sortVehicles() -> [LSVehicle] {
+    private func sortVehicles() -> [LSVehicleModel] {
         // Separate vehicles with and without driverID
         guard let vehicles = self.vehicles else { return [] }
 
-        let vehiclesWithDriverID = vehicles.filter { $0.driverID != nil }
-        let vehiclesWithoutDriverID = vehicles.filter { $0.driverID == nil }
+        let vehiclesWithDriverID = vehicles.filter { $0.driverId != nil }
+        let vehiclesWithoutDriverID = vehicles.filter { $0.driverId == nil }
 
         // Combine the lists: vehicles with driverID first
         return vehiclesWithoutDriverID + vehiclesWithDriverID
@@ -57,7 +57,7 @@ class LSVehiclesViewController: UIViewController {
     @IBAction func assignAction(_ sender: Any) {
         if let userDetails = UserDefaults.standard.userDetails {
             let vehicles = self.vehicles
-            if let assignedVehicle = vehicles?.first(where: {$0.driverID == userDetails.userId}) {
+            if let assignedVehicle = vehicles?.first(where: {$0.driverId == userDetails.userId}) {
                 self.unAssignVehicle(assignedVehicle: assignedVehicle)
             }  else {
                 self.assignVehicle()
@@ -69,7 +69,7 @@ class LSVehiclesViewController: UIViewController {
         LSProgress.show(in: self.view)
         let endpoint = LSAPIEndpoints.driverToVehicleAssign()
         guard let selectedOrganization = UserDefaults.standard.selectedOrganization, let lonestarId = selectedOrganization.lonestarId else { return }
-        if let userDetails = UserDefaults.standard.userDetails, let selectedIndexPath = self.selectedIndexPath, let vehicle = self.vehicles?[selectedIndexPath.row], let vehicleId = vehicle.vehicleID {
+        if let userDetails = UserDefaults.standard.userDetails, let selectedIndexPath = self.selectedIndexPath, let vehicle = self.vehicles?[selectedIndexPath.row], let vehicleId = vehicle.vehicleId {
             let requestbody = RequestBodyForVehicleAssign(driverId: userDetails.userId, vehicleId: vehicleId, lonestarId: lonestarId, currentLoggedInUserId: userDetails.userId)
             Task {
                 do {
@@ -77,11 +77,11 @@ class LSVehiclesViewController: UIViewController {
                     LSCombineCommunicator.shared.send(.assignVehicle(.success(vehicle: response)))
                     print("Response Error: ", response)
                     LSProgress.hide(from: self.view)
-                    if let details = response.message {
-                        UIAlertController.showActionMessage(on: self, message: details) {
-                            self.navigationController?.popViewController(animated: true)
-                        }
-                    }
+//                    if let details = response.message {
+//                        UIAlertController.showActionMessage(on: self, message: details) {
+//                            self.navigationController?.popViewController(animated: true)
+//                        }
+//                    }
                 } catch {
                     UIAlertController.showError(on: self, message: String(error.localizedDescription))
                     LSProgress.hide(from: self.view)
@@ -90,12 +90,12 @@ class LSVehiclesViewController: UIViewController {
         }
     }
     
-    private func unAssignVehicle(assignedVehicle: LSVehicle) {
+    private func unAssignVehicle(assignedVehicle: LSVehicleModel) {
         LSProgress.show(in: self.view)
         let endpoint = LSAPIEndpoints.driverToVehicleUnAssign()
         guard let selectedOrganization = UserDefaults.standard.selectedOrganization, let lonestarId = selectedOrganization.lonestarId else { return }
 
-        if let userDetails = UserDefaults.standard.userDetails, let vehicleId = assignedVehicle.vehicleID {
+        if let userDetails = UserDefaults.standard.userDetails, let vehicleId = assignedVehicle.vehicleId {
             let requestbody = RequestBodyForVehicleAssign(driverId: userDetails.userId, vehicleId: vehicleId, lonestarId: lonestarId, currentLoggedInUserId: userDetails.userId)
             Task {
                 do {
@@ -150,7 +150,7 @@ extension LSVehiclesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vehicle = self.vehicles?[indexPath.row]
-        if let isDriverAssigned = vehicle?.driverID {
+        if let isDriverAssigned = vehicle?.driverId {
             UIAlertController.showError(on: self, message: "Driver already assigned to this vehicle")
 
         } else {

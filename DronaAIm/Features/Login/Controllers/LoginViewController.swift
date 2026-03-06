@@ -117,45 +117,41 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func continueWithSignedInFlow() async throws {
-//        let currentUser = try await LSNetworkManager.shared.currentUser()
-//        let userId = currentUser.userId
-//
-//        // Call Api to fetch User Information
-//        let endpoint = LSAPIEndpoints.userDetails(for: userId)
-//        let userDetails: LSUserDetailsModel = try await LSNetworkManager.shared.get(endpoint, apiType: .analytics)
-//        UserDefaults.standard.userDetails = userDetails
-//        LSLogger.debug("User Details: \(userDetails)")
-//        UserDefaults.standard.selectedOrganization = nil
-//          if userDetails.orgRoleAndScoreMapping.count == 1 {
-//            if let org = userDetails.orgRoleAndScoreMapping.first, org.policyDetails.first?.isActive ?? false  {
-//                if org.role == "driver" {
-//                    UserDefaults.standard.selectedOrganization = org
-//                    DispatchQueue.main.async {
-//                        let tabbarController = LSTabbarController.instantiate(fromStoryboard: .driver)
-//                        let navigationController = UINavigationController(rootViewController: tabbarController)
-//                        if let window = UIApplication.shared.keyWindow {
-//                            window.rootViewController = navigationController
-//                        }
-//                    }
-//                } else {
-//                    UIAlertController.showError(on: self, message: LSConstants.Strings.Auth.unauthorizedUser)
-//                }
-//                
-//            } else if let org = userDetails.orgRoleAndScoreMapping.first, let message = org.policyDetails.first?.message {
-//                UIAlertController.showError(on: self, message: message)
-//            }
-//        }
-//        else {
-//            let organizationsVC = LSOrganizationsListViewController.instantiate(fromStoryboard: .driver)
-//            self.navigationController?.pushViewController(organizationsVC, animated: true)
-//        }
-//        LSProgress.hide(from: self.view)
-        
-        let tabbarController = LSTabbarController.instantiate(fromStoryboard: .driver)
-        let navigationController = UINavigationController(rootViewController: tabbarController)
-        if let window = UIApplication.shared.keyWindow {
-            window.rootViewController = navigationController
+        let currentUser = try await LSNetworkManager.shared.currentUser()
+        let userId = currentUser.userId
+
+        // Call Api to fetch User Information
+        let endpoint = LSAPIEndpoints.userDetails(for: userId)
+        let userDetails: LSUserDetailsModel = try await LSNetworkManager.shared.get(endpoint, apiType: .analytics)
+        UserDefaults.standard.userDetails = userDetails
+        LSLogger.debug("User Details: \(userDetails)")
+        UserDefaults.standard.selectedOrganization = nil
+          if userDetails.orgRoleAndScoreMapping.count == 1 {
+              if let org = userDetails.orgRoleAndScoreMapping.first, userDetails.activeStatus == "active"  {
+                if org.role == "driver" {
+                    UserDefaults.standard.selectedOrganization = org
+                    DispatchQueue.main.async {
+                        let tabbarController = LSTabbarController.instantiate(fromStoryboard: .driver)
+                        let navigationController = UINavigationController(rootViewController: tabbarController)
+                        if let window = UIApplication.shared.keyWindow {
+                            window.rootViewController = navigationController
+                        }
+                    }
+                } else {
+                    UIAlertController.showError(on: self, message: LSConstants.Strings.Auth.unauthorizedUser)
+                }
+                
+            } else if let org = userDetails.orgRoleAndScoreMapping.first {
+                UIAlertController.showError(on: self, message: "User is allowed")
+            }
         }
+        else {
+            let organizationsVC = LSOrganizationsListViewController.instantiate(fromStoryboard: .driver)
+            self.navigationController?.pushViewController(organizationsVC, animated: true)
+        }
+        LSProgress.hide(from: self.view)
+        
+        
     }
     
     private func rememberMe() {

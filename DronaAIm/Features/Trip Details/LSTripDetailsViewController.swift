@@ -70,7 +70,7 @@ class LSTripDetailsViewController: UIViewController {
     
     private func fetchTripLiveTrack() async  {
         LSProgress.show(in: self.view)
-              let tripID = trip.tripID
+        let tripID = trip.tripID ?? ""
                 let endpoint = LSAPIEndpoints.liveTrackByTripId(for: tripID)
                 do {
                     let response: LSDTripLiveTrackModel = try await LSNetworkManager.shared.get(endpoint)

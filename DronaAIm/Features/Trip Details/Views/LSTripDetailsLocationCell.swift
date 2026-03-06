@@ -48,7 +48,7 @@ class LSTripDetailsLocationCell: UITableViewCell {
 //            }
             
             timeLabel.text = "NA"
-            timeLabel.text = trip.startDateAndTimeZone(format: .MMMdYYYHmmaComma)
+            timeLabel.text = trip.dateTZ.startDateAndTimeZone(format: LSDateFormat.MMMdYYYHmmaComma)
 
         } else if coordinateType == .end {
             self.locationtypeLabel.text = "End Location"
@@ -66,10 +66,11 @@ class LSTripDetailsLocationCell: UITableViewCell {
 //            }
             
             timeLabel.text = "NA"
-            timeLabel.text = trip.endDateAndTimeZone(format: .MMMdYYYHmmaComma)
+            timeLabel.text = trip.dateTZ.endDateAndTimeZone(format: LSDateFormat.MMMdYYYHmmaComma)
 
         }
         
     }
 
 }
+

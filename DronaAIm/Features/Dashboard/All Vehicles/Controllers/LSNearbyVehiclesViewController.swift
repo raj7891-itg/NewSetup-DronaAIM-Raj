@@ -10,8 +10,8 @@ import UIKit
 class LSNearbyVehiclesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var vehicles: [LSVehicle]?
-    var nearbyVehicles: [LSVehicle]?
+    var vehicles: [LSVehicleModel]?
+    var nearbyVehicles: [LSVehicleModel]?
 
     @IBOutlet weak var assignButton: UIButton!
     var selectedIndexPath: IndexPath?
@@ -29,21 +29,27 @@ class LSNearbyVehiclesViewController: UIViewController {
     func reloadTable() {
         Task {
             self.nearbyVehicles = try await getNearbyVehicles()
-            print("Nearby Vehicles =", nearbyVehicles)
+            print("Nearby Vehicles =", nearbyVehicles as Any)
             self.tableView.dataSource = self
             self.tableView.delegate = self
             self.tableView.reloadData()
         }
     }
     
-    private func getNearbyVehicles() async throws -> [LSVehicle] {
+    private func getNearbyVehicles() async throws -> [LSVehicleModel] {
         let calculator = DistanceCalculator()
         guard let vehicles = vehicles else { return [] }
-        var nearbyVehicles: [LSVehicle] = []
+        var nearbyVehicles: [LSVehicleModel] = []
         for vehicle in vehicles {
-            if let gnssInfo = vehicle.lastLiveTrack?.gnssInfo, let latitude = gnssInfo.latitude, let longitude = gnssInfo.longitude {
+            // Find the first lookup device that has valid gnss coordinates
+            if let gnssInfo = vehicle.lookupDevices
+                .compactMap({ $0.lastLiveTrack?.gnssInfo })
+                .first(where: { $0.latitude != nil && $0.longitude != nil }),
+               let latitude = gnssInfo.latitude,
+               let longitude = gnssInfo.longitude {
+                
                 let distance = await calculator.distanceBetweenCoordinates(lat2: latitude, lon2: longitude)
-                print("Distance in meters: \(distance)")
+                print("Distance in meters: \(distance as Any)")
                 if let distanceInMeters = distance, distanceInMeters <= 500 {
                     nearbyVehicles.append(vehicle)
                 }
@@ -58,7 +64,7 @@ class LSNearbyVehiclesViewController: UIViewController {
 
         LSProgress.show(in: self.view)
         let endpoint = LSAPIEndpoints.driverToVehicleAssign()
-        if let selectedIndexPath = self.selectedIndexPath, let vehicle = self.nearbyVehicles?[selectedIndexPath.row], let vehicleId = vehicle.vehicleID {
+        if let selectedIndexPath = self.selectedIndexPath, let vehicle = self.nearbyVehicles?[selectedIndexPath.row], let vehicleId = vehicle.vehicleId {
             let requestbody = RequestBodyForVehicleAssign(driverId: userDetails.userId, vehicleId: vehicleId, lonestarId: lonestarId, currentLoggedInUserId: userDetails.userId)
             Task {
                 do {
@@ -66,11 +72,11 @@ class LSNearbyVehiclesViewController: UIViewController {
                     LSCombineCommunicator.shared.send(.assignVehicle(.success(vehicle: response)))
                     print("Response Error: ", response)
                     LSProgress.hide(from: self.view)
-                    if let details = response.message {
-                        UIAlertController.showActionMessage(on: self, message: details) {
-                            self.navigationController?.popViewController(animated: true)
-                        }
-                    }
+//                    if let details = response.message {
+//                        UIAlertController.showActionMessage(on: self, message: details) {
+//                            self.navigationController?.popViewController(animated: true)
+//                        }
+//                    }
                 } catch {
                     UIAlertController.showError(on: self, message: String(error.localizedDescription))
                     LSProgress.hide(from: self.view)
@@ -122,7 +128,7 @@ extension LSNearbyVehiclesViewController: UITableViewDataSource, UITableViewDele
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vehicle = self.nearbyVehicles?[indexPath.row]
-        if let isDriverAssigned = vehicle?.driverID {
+        if let _ = vehicle?.driverId {
             UIAlertController.showError(on: self, message: "Driver already assigned to this vehicle")
 
         } else {

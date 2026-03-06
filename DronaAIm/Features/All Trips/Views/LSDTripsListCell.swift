@@ -66,7 +66,7 @@ class LSDTripsListCell: UITableViewCell {
         }
 
         var scoreColor = UIColor.appRed
-        if let tripScore = trip.tripScore {
+        if let tripScoreString = trip.tripScore, let tripScore = Int(tripScoreString) {
             if tripScore >= 90 {
                 scoreColor = UIColor.appGreen
             } else if tripScore >= 80 && tripScore <= 89 {
@@ -77,8 +77,11 @@ class LSDTripsListCell: UITableViewCell {
         safetyScoreView.backgroundColor = scoreColor.withAlphaComponent(0.1)
         safetyScoreView.layer.borderColor = scoreColor.cgColor
 
-        if let tripScore = trip.safetyScore {
-            statusLabel.text = "Trip Score : \(LSCalculation.shared.doubleFormat(score: tripScore))"
+        if
+            let safetyScoreString = trip.safetyScore,
+            let safetyScore = Double(safetyScoreString)
+        {
+            statusLabel.text = "Trip Score : \(LSCalculation.shared.doubleFormat(score: safetyScore))"
         } else {
             statusLabel.text = "Trip Score NA"
             statusLabel.textColor = .lightGray
@@ -89,15 +92,17 @@ class LSDTripsListCell: UITableViewCell {
         tripIdLabel.text = trip.tripID
         vehicleIdLabel.text = trip.vehicleID
         
-        if let incidents = trip.incidentCount {
+        if let incidentsString = trip.incidentCount, let incidents = Int(incidentsString) {
             if incidents == 0 || incidents == 1 {
                 deviceIdLabel.text = "\(incidents) event"
             } else {
                 deviceIdLabel.text = "\(incidents) events"
             }
+        } else {
+            deviceIdLabel.text = "NA"
         }
-        if let tripDistance = trip.tripDistance {
-            let distance = LSCalculation.shared.distance(from: tripDistance)
+        if let tripDistanceString = trip.tripDistance, let tripDistanceKM = Double(tripDistanceString) {
+            let distance = LSCalculation.shared.distance(from: tripDistanceKM)
             distanceLabel.text = "\(distance) miles"
         } else {
             distanceLabel.text = "NA"
@@ -119,15 +124,40 @@ class LSDTripsListCell: UITableViewCell {
         }
         if trip.estimatedEndAddress ?? false {
             endToolTipButton.isHidden = false
+        } else {
+            endToolTipButton.isHidden = true
         }
         if trip.estimatedStartAddress ?? false {
             startToolTipButton.isHidden = false
+        } else {
+            startToolTipButton.isHidden = true
         }
         startDateLabel.text = "NA"
         endDateLabel.text = "NA"
         
-        startDateLabel.text = trip.startDate(format: .UsStandardDate)
-        endDateLabel.text = trip.endDate(format: .UsStandardDate)
+        // Format start date
+        if let startStr = trip.startDate, !startStr.isEmpty {
+            if let ts = Double(startStr),
+               let formatted = LSDateFormatter.shared.convertTimestampToDate(from: ts, format: .UsStandardDate) {
+                startDateLabel.text = formatted
+            } else {
+                startDateLabel.text = startStr
+            }
+        } else {
+            startDateLabel.text = "NA"
+        }
+        
+        // Format end date
+        if let endStr = trip.endDate, !endStr.isEmpty {
+            if let ts = Double(endStr),
+               let formatted = LSDateFormatter.shared.convertTimestampToDate(from: ts, format: .UsStandardDate) {
+                endDateLabel.text = formatted
+            } else {
+                endDateLabel.text = endStr
+            }
+        } else {
+            endDateLabel.text = "NA"
+        }
     }
     
     @IBAction func tipIconAction(_ sender: UIButton) {

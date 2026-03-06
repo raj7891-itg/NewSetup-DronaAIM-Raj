@@ -29,17 +29,34 @@ struct LSAPIEndpoints {
 
     }
 
-    static func userDetails(for userId: String) -> String {
-        return "users/userinfo/\(userId)"
-    }
-        
-    static func tripsByDriverId(for driverId: String) -> String {
-        return "lonestar/driver/\(driverId)/trips"
-    }
+//    static func userDetails(for userId: String) -> String {
+//        return "users/userinfo/\(userId)"
+//    }
     
-    static func eventsBytripId(for tripId: String) -> String {
-        return "lonestar/trip/\(tripId)/incidents"
-    }
+    
+        static func userDetails(for userId: String) -> String {
+            return "users/US1171"
+        }
+    
+        
+//    static func tripsByDriverId(for driverId: String) -> String {
+//        return "lonestar/driver/\(driverId)/trips"
+//    }
+    
+        static func tripsByDriverId(for driverId: String) -> String {
+            return "drivers/driver/\(driverId)/trips"
+        }
+    
+    
+    
+//    static func eventsBytripId(for tripId: String) -> String {
+//        return "lonestar/trip/\(tripId)/incidents"
+//    }
+    
+        static func eventsBytripId(for tripId: String) -> String {
+            return "lonestar/trip/\(tripId)/incidents"
+        }
+    
     
     static func allEventsByUserId(for driverId: String) -> String {
         return "lonestar/driver/\(driverId)/incidents"
@@ -49,9 +66,17 @@ struct LSAPIEndpoints {
         return "lonestar/vehicles/trip/\(tripId)/livetrack"
     }
     
-    static func vehicleStats(for vehicleId: String) -> String {
-        return "lonestar/vehicles/\(vehicleId)/stats"
-    }
+//    static func vehicleStats(for vehicleId: String) -> String {
+//        return "lonestar/vehicles/\(vehicleId)/stats"
+//    }
+    
+static func vehicleStats(for vehicleId: String) -> String {
+return "super-fleet-manager/vehicleStats/\(vehicleId)"
+}
+    
+    
+    
+    
     
 //    static func driverScoreData(for lonestarId: String, driverId: String) -> String {
 //        return "analytics/v1/scores/driver/\(lonestarId)/\(driverId)"
@@ -66,13 +91,29 @@ struct LSAPIEndpoints {
 //        return "lonestar/\(tenantId)/vehicles"
 //    }
     
-    static func driverToVehicleAssign() -> String {
-        return "lonestar/assignVechile/driver"
-    }
+        static func vehiclesByTenentId(for tenantId: String) -> String {
+            return "vehicle/vehicleList/\(tenantId)"
+        }
     
-    static func driverToVehicleUnAssign() -> String {
-        return "lonestar/unassignVechile/driver"
-    }
+    
+//    static func driverToVehicleAssign() -> String {
+//        return "lonestar/assignVechile/driver"
+//    }
+    
+        static func driverToVehicleAssign() -> String {
+            return "users/assignVehicle/driver"
+        }
+    
+    
+//    static func driverToVehicleUnAssign() -> String {
+//        return "lonestar/unassignVechile/driver"
+//    }
+    
+        static func driverToVehicleUnAssign() -> String {
+            return "users/unassignVechile/driver"
+        }
+    
+    
     
     static func eventsMetadataByDriverId(for driverId: String) -> String {
         return "lonestar/driver/\(driverId)/incidents/metadata"
@@ -248,6 +289,8 @@ class LSNetworkManager {
     func get<T: Decodable>(_ endpoint: String, parameters: [String: String]? = nil, apiType: LSNetworkEnvironment.API? = .lonestar) async throws -> T {
         let request = try await createRequest(endpoint: endpoint, method: "GET", parameters: parameters, apiType: apiType ?? .lonestar)
         let (data, response) = try await URLSession.shared.data(for: request)
+        let responseString = String(data: data, encoding: .utf8)
+            print("Response Body: \(responseString)")
         
         // Check if the response is an HTTP response and get the status code
         if let httpResponse = response as? HTTPURLResponse {
@@ -280,6 +323,9 @@ class LSNetworkManager {
           // Optionally set the content type if your API requires it
           request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         let (data, response) = try await URLSession.shared.data(for: request)
+        let responseString = String(data: data, encoding: .utf8)
+            print("Response Body: \(responseString)")
+        
         if let httpResponse = response as? HTTPURLResponse {
             switch httpResponse.statusCode {
             case 200...299:
@@ -287,7 +333,24 @@ class LSNetworkManager {
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? Dictionary<String, Any> {
                     LSLogger.debug("POST response: \(json)")
                 }
-                return try JSONDecoder().decode(U.self, from: data)
+                do {
+                    return try JSONDecoder().decode(U.self, from: data)
+                } catch let DecodingError.keyNotFound(key, context) {
+                    print("❌ Key not found: \(key.stringValue) – \(context.debugDescription)")
+                    throw DecodingError.keyNotFound(key, context)
+                } catch let DecodingError.typeMismatch(type, context) {
+                    print("❌ Type mismatch: expected \(type) – \(context.debugDescription) at path: \(context.codingPath.map { $0.stringValue })")
+                    throw DecodingError.typeMismatch(type, context)
+                } catch let DecodingError.valueNotFound(type, context) {
+                    print("❌ Value not found: \(type) – \(context.debugDescription) at path: \(context.codingPath.map { $0.stringValue })")
+                    throw DecodingError.valueNotFound(type, context)
+                } catch let DecodingError.dataCorrupted(context) {
+                    print("❌ Data corrupted: \(context.debugDescription)")
+                    throw DecodingError.dataCorrupted(context)
+                } catch {
+                    print("❌ Decoding error: \(error)")
+                    throw error
+                }
             default:
                 // Handle other status codes
                 throw try handleHTTPError(httpResponse, data: data)

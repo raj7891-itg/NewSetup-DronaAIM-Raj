@@ -22,8 +22,9 @@ class LSTripDetailsEngineCell: UITableViewCell {
     }
     
     func config(with indexPath: IndexPath, trip: LSDTrip) {
-        if let tripDuration = trip.tripDuration {
-            let time = LSCalculation.shared.duration(from: Int(tripDuration))
+        if let tripDurationString = trip.tripDuration,
+           let tripDurationMs = Int(tripDurationString) {
+            let time = LSCalculation.shared.duration(from: tripDurationMs)
             let hours = time.hours
             let minutes = time.minutes
             tripDurationLabel.text = "\(hours) hrs \(minutes) mins"
@@ -31,9 +32,10 @@ class LSTripDetailsEngineCell: UITableViewCell {
             tripDurationLabel.text = "NA"
         }
         
-        if let tripDistance = trip.tripDistance {
-            let tripDistance = LSCalculation.shared.distance(from: tripDistance)
-            tripDistanceLabel.text = "\(tripDistance) miles"
+        if let tripDistanceString = trip.tripDistance,
+           let tripDistanceKm = Double(tripDistanceString) {
+            let tripDistanceMiles = LSCalculation.shared.distance(from: tripDistanceKm)
+            tripDistanceLabel.text = "\(tripDistanceMiles) miles"
         } else {
             tripDistanceLabel.text = "NA"
         }

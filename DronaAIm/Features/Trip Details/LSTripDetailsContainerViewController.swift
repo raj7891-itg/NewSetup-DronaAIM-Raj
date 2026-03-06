@@ -33,8 +33,17 @@ class LSTripDetailsContainerViewController: UIViewController {
             self.tripIdLabel.text = self.trip?.tripID
         }
         fetchEventsForTrip()
+
+        // Parse tripScore string to Double for comparisons and display
+        let tripScoreValue: Double? = {
+            if let scoreString = trip?.tripScore {
+                return Double(scoreString)
+            }
+            return nil
+        }()
+
         var scoreColor = UIColor.appRed
-        if let tripScore = trip?.tripScore {
+        if let tripScore = tripScoreValue {
             if tripScore >= 90 {
                 scoreColor = UIColor.appGreen
             } else if tripScore >= 80 && tripScore <= 89 {
@@ -45,9 +54,9 @@ class LSTripDetailsContainerViewController: UIViewController {
         tripScoreView.backgroundColor = scoreColor.withAlphaComponent(0.1)
         tripScoreView.layer.borderColor = scoreColor.cgColor
 
-        if let score = trip?.tripScore {
-            let tripScore = (LSCalculation.shared.doubleFormat(score: score))
-            safetyScoreLabel.text = "Trip Score \(tripScore)"
+        if let score = tripScoreValue {
+            let tripScoreText = LSCalculation.shared.doubleFormat(score: score)
+            safetyScoreLabel.text = "Trip Score \(tripScoreText)"
         } else {
             safetyScoreLabel.text = "Trip Score NA"
             safetyScoreLabel.textColor = UIColor.lightGray

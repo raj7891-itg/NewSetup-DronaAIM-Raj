@@ -31,13 +31,13 @@ class LSVehicleUnassignTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func config(with vehicle: LSVehicle?) {
-        vehicleIdLabel.text = vehicle?.vehicleID ?? "NA"
+    func config(with vehicle: LSVehicleModel?) {
+        vehicleIdLabel.text = vehicle?.vehicleId ?? "NA"
         vinLabel.text = vehicle?.vin ?? "NA"
         makeLabel.text = vehicle?.make ?? "NA"
         modelLabel.text = vehicle?.model ?? "NA"
         yearLabel.text = vehicle?.year.map { String($0) } ?? "NA"
-        licencePlateLabel.text = vehicle?.licencePlateNumber ?? "NA"
+        //licencePlateLabel.text = vehicle?.licencePlateNumber ?? "NA"
 
     }
 }

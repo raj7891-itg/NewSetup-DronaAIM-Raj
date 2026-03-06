@@ -13,7 +13,7 @@ class LSVehiclesContainerViewController: UIViewController {
     private var eventsVC: LSVehiclesViewController!
     private var tripDetailsVC: LSNearbyVehiclesViewController!
     private var currentVC: UIViewController?
-    var vehicles: [LSVehicle]?
+    var vehicles: [LSVehicleModel]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ class LSVehiclesContainerViewController: UIViewController {
         let endpoint = LSAPIEndpoints.vehiclesByTenentId(for: lonestarId)
             Task {
                 do {
-                    let response: LSAllVehiclesModel = try await LSNetworkManager.shared.post(endpoint, body: LSRequstEmpty(empty: ""), parameters: ["page": "1", "limit":  "100"])
+                    let response: LSVehicleListResponse = try await LSNetworkManager.shared.post(endpoint, body: LSRequstEmpty(empty: ""), parameters: ["page": "1", "limit":  "100"])
                     self.vehicles = response.vehicles
                     self.eventsVC.vehicles = self.vehicles
                     self.tripDetailsVC.vehicles = self.vehicles

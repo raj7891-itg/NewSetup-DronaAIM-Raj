@@ -44,6 +44,10 @@ extension LSNetworkManager {
     
     func currentUser() async throws -> AuthUser {
           let currentUser = try await Amplify.Auth.getCurrentUser()
+        let attributes = try await Amplify.Auth.fetchUserAttributes()
+        for attribute in attributes {
+                print("🔸 \(attribute.key.rawValue): \(attribute.value)")
+            }
         print("Current User =", currentUser.userId)
         return currentUser
     }

@@ -75,7 +75,7 @@ extension LSOrganizationsListViewController: UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let org = self.organizations[indexPath.row]
-        if org.policyDetails.first?.isActive ?? false  {
+        if org.policyDetails?.first?.isActive ?? false  {
             if org.role == "driver" {
                 UserDefaults.standard.selectedOrganization = org
                 DispatchQueue.main.async {
@@ -89,7 +89,7 @@ extension LSOrganizationsListViewController: UITableViewDataSource, UITableViewD
                 UIAlertController.showError(on: self, message: "Unauthorized user")
             }
             
-        } else if let message = org.policyDetails.first?.message {
+        } else if let message = org.policyDetails?.first?.message {
             UIAlertController.showError(on: self, message: message)
         }
         

@@ -41,7 +41,7 @@ enum LSNetworkEnvironment {
         case (.lonestar, .preProd):
             return "https://pre-prod.api.core.dronaaim.ai/v1/"
         case (.lonestar, .production):
-            return "https://api.core.dronaaim.ai/v1/"
+            return "http://54.80.204.44:5000/"
         case (.analytics, .development):
             return "https://uy4e3jywp9.execute-api.us-east-1.amazonaws.com/"
         case (.analytics, .staging):
@@ -50,7 +50,7 @@ enum LSNetworkEnvironment {
             return "https://vow17r597d.execute-api.us-east-1.amazonaws.com/"
         case (.analytics, .production):
             //return "https://api.analytics.dronaaim.ai/"
-            return "http://54.80.204.44:3000/"
+            return "http://54.80.204.44:5000/"
         case (.alias, .development):
             return "https://dev.alias.lonestartelematics.online/v1/alias"
         case (.alias, .staging):

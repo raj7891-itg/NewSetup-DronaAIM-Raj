@@ -27,13 +27,13 @@ class LSOrganizationsListTableViewCell: UITableViewCell {
     func config(with org: LSOrgRoleAndScoreMapping?) {
         greenTickImageView.isHidden = true
 
-        if let selected = UserDefaults.standard.selectedOrganization, let orgName = org?.name, orgName == selected.name {
+        if let selected = UserDefaults.standard.selectedOrganization, let orgName = org?.orgName, orgName == selected.orgName {
             greenTickImageView.isHidden = false
             containerView.layer.borderColor = UIColor.appGreen.cgColor
             containerView.layer.borderWidth = 2.0
         }
 
-        organizationNameLabel.text = org?.name
+        organizationNameLabel.text = org?.orgName
         
         let roleDisplayName: String
 

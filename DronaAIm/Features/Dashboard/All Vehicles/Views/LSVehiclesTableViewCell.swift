@@ -37,9 +37,9 @@ class LSVehiclesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func config(with vehicle: LSVehicle?, isSelected: Bool, indexPath: IndexPath) {
+    func config(with vehicle: LSVehicleModel?, isSelected: Bool, indexPath: IndexPath) {
         self.indexPath = indexPath
-        if let isDriverAssigned = vehicle?.driverID {
+        if let isDriverAssigned = vehicle?.driverId {
             self.contentView.alpha = 0.5 // Fades the entire cell
             radioButton.setImage( UIImage(named: "assigned"), for: .normal)
         } else {
@@ -47,12 +47,12 @@ class LSVehiclesTableViewCell: UITableViewCell {
             updateRadioButton(isSelected: isSelected)
         }
         
-        vehicleIdLabel.text = vehicle?.vehicleID ?? "NA"
+        vehicleIdLabel.text = vehicle?.driverId ?? "NA"
         vinLabel.text = vehicle?.vin ?? "NA"
         makeLabel.text = vehicle?.make ?? "NA"
         modelLabel.text = vehicle?.model ?? "NA"
         yearLabel.text = vehicle?.year.map { String($0) } ?? "NA"
-        licencePlateLabel.text = vehicle?.licencePlateNumber ?? "NA"
+        //licencePlateLabel.text = vehicle?.licencePlateNumber ?? "NA"
     }
     
     @IBAction func radioButtonAction(_ sender: Any) {
